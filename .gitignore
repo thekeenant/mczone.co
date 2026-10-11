@@ -1,0 +1,20 @@
+# Wayback downloads and caches (rebuilt by scrape.py fetch/ext/avatars)
+raw/
+avatars/
+cdx*.json
+cdx*.txt
+
+# Generated mirror output (scrape.py build)
+site/
+site-v*/
+routes*.caddy
+redirects.caddy
+manifest*.json
+missing*.txt
+*.log
+
+# Raw source material for the landing page
+landing/incoming/
+
+__pycache__/
+.venv/
