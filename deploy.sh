@@ -4,8 +4,8 @@
 # designs at v1/v2/v3.mczone.co.
 set -e
 cd "$(dirname "$0")"
-rsync -a --delete site/ ~/web/mczone-site/
-cp routes.caddy ~/web/mczone-routes.caddy
+rsync -a --delete site-v4/ ~/web/mczone-site/
+cp routes-v4.caddy ~/web/mczone-routes.caddy
 mkdir -p ~/web/mczone-editions
 for e in v1 v2 v3; do
   [ -d "site-$e" ] || continue

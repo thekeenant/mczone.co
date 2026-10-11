@@ -9,12 +9,12 @@
   scrape.py avatars              download archived minotar/cravatar heads used by any edition into avatars/
   scrape.py build     [edition]  write a servable static tree into site-<edition>/ plus Caddy routes
 
-Editions are the site's successive designs (see EDITIONS); the default is main.
+Editions are the site's successive designs (see EDITIONS); the default is v4.
 
 Captures are fetched with the `id_` flag, so bytes are exactly what the
 original server sent, with no Wayback toolbar or link rewriting. The site's
 own links are left as they were; query-string urls are routed by Caddy using
-the generated routes.caddy.
+the generated routes-<edition>.caddy.
 """
 import concurrent.futures as cf
 import hashlib
@@ -42,16 +42,16 @@ HOSTS = set(HOST_PREFIX)
 LIVE_HOSTS = {"minotar.net", "cravatar.eu"}
 # Each edition is one design of the site, mirrored from captures in
 # [start, end). In early November 2013 the site was rebranded to the Avicus
-# Network, which ends the main edition.
+# Network, which ends the v4 edition.
 EDITIONS = {
     "v1": ("20121101", "20121110"),    # blue Bootstrap "Welcome, MC gamers!"
     "v2": ("20121110", "20130401"),    # dark theme, script logo, planet banner
     "v3": ("20130401", "20130701"),    # "Minecraft Zone", the PHP code in mczone-web
-    "main": ("20130701", "20131108"),  # Rails rewrite, forums and stats
+    "v4": ("20130701", "20131108"),    # Rails rewrite, forums and stats
 }
-EDITION = sys.argv[2] if len(sys.argv) > 2 else "main"
+EDITION = sys.argv[2] if len(sys.argv) > 2 else "v4"
 ERA_START, CUTOFF = EDITIONS[EDITION]
-SUFFIX = "" if EDITION == "main" else "-" + EDITION
+SUFFIX = "-" + EDITION
 SITE = os.path.join(ROOT, "site" + SUFFIX)
 MANIFEST = os.path.join(ROOT, f"manifest{SUFFIX}.json")
 ROUTES = os.path.join(ROOT, f"routes{SUFFIX}.caddy")
@@ -504,7 +504,7 @@ def cmd_avatars():
             by_user.setdefault(a[1].lower(), []).append((a[2], ts, url))
     wanted = set()
     for ed, (start, end) in EDITIONS.items():
-        path = os.path.join(ROOT, "manifest.json" if ed == "main" else f"manifest-{ed}.json")
+        path = os.path.join(ROOT, f"manifest-{ed}.json")
         if not os.path.exists(path):
             continue
         with open(path) as f:
@@ -856,7 +856,7 @@ def cmd_build():
             with open(p, "wb") as f:
                 f.write(data)
     for path, extra in PATCHES.items():
-        if EDITION != "main" or not os.path.exists(os.path.join(SITE, path.lstrip("/"))):
+        if EDITION != "v4" or not os.path.exists(os.path.join(SITE, path.lstrip("/"))):
             continue
         with open(os.path.join(SITE, path.lstrip("/")), "a") as f:
             f.write(extra)
