@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MC Zone » Nexus</title>
+  <link href="/assets/style.css?m=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/custom.css?m=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/application.css?m=1" media="all" rel="stylesheet" type="text/css" />
+  <script src="/assets/application.js?m=1" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="11/V4gd8YeD1swvZ6apjG1cbci1oYY/eMuk3CeL9gXs=" name="csrf-token" />
+</head>
+<body>
+  <div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/">
+        <i class="icon-globe"></i>
+        MC Zone
+      </a>
+      <div class="nav-collapse">
+        <ul class="nav pull-right">
+
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Account 
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-header">Logged in as: Guest</li>
+              <li>
+                <a href="/login">Login</a>
+              </li>
+              <li>
+                <a href="/register">Register</a>
+              </li>
+            </ul>
+          </li>
+        </li>
+      </ul>
+        <ul class="nav links pull-right">
+          <li class="active">
+            <a href="/servers">
+              <i class="icon-hdd"></i>
+              Servers
+            </a>
+          </li>
+          <li class="">
+            <a href="/shop">
+              <i class="icon-shopping-cart"></i>
+              Shop
+            </a>
+          </li>
+          <li class="">
+            <a href="/forum">
+              <i class="icon-book"></i>
+              Forum
+            </a>
+          </li>
+          <li class="">
+            <a href="/vote">
+              <i class="icon-check"></i>
+              Vote
+            </a>
+          </li>
+          <li class="">
+            <a href="/profiles">
+              <i class="icon-user"></i>
+              Profiles
+            </a>
+          </li>
+        </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+  <div class="container">
+
+
+
+    <br />
+
+
+    
+<header class="subhead">
+	<div class="container">
+		<h1>Ghost Squadron</h1>
+		<p class="lead">
+			Two teams fight on various maps with a catch... Every player is invisible to their
+			enemy! Use your selected kit and other items to find and target the enemy team.
+		</p>
+		<a class="btn btn-inverse btn-large" data-toggle="modal" href="#ghost-video">Video »</a>
+		<a class="btn btn-primary btn-large" data-toggle="modal" href="#play">Play Now »</a>
+	</div>
+</header>
+
+<br />
+
+<h3>Buy Kits</h3>
+
+<p>The kit shop has been moved to the <a href="/shop/">shop</a>.</p>
+
+<!--
+<h3>Buy Kits <small>Kits purchased will be delivered within 5 minutes</small></h3>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="form-inline fancy-kits-form pull-right" style="margin-top:15px;">
+	<div class="input-prepend">
+		<span class="add-on">Username: </span>
+		<input type="text" name="custom" id="custom" autocomplete="off" class="span2 username" style="width: 120px;">
+	</div>
+	<input type="hidden" name="item_name" class="item_name" value="">
+	<input type="hidden" name="cmd" value="_xclick">
+	<input type="hidden" name="business" value="info@mczone.co">
+	<input type="hidden" name="item_number" value="1">  
+	<input type="hidden" name="amount" class="price" value="0">  
+	<input type="hidden" name="no_shipping" value="0">  
+	<input type="hidden" name="no_note" value="1">  
+	<input type="hidden" name="currency_code" value="USD">  
+	<input type="hidden" name="lc" value="AU">
+	<input type="hidden" name="bn" value="PP-BuyNowBF">  
+	<input type="hidden" name="notify_url" value="http://mczone.co/ipn/ghost" />
+	<input type="hidden" name="return" value="http://mczone.co?notify=payment">
+	<button type="submit" disabled="disabled" class="btn btn-success check item_price">Purchase Cart ($0.00)</button>
+</form>
+
+<table class="table">
+	<thead>
+		<th>Kit Name</th>
+		<th>About</th>
+		<th>Price</th>
+		<th>Cart</th>
+	</thead>
+	<tr style="">
+		<td><b>Alchemist</b></td>
+		<td>- 5x Splash Potion of Harming<br />- 3x Splash Potion of Harming<br />- 5x Potion of Healing</td>
+		<td>$3.50</td>
+		<td><input type="checkbox" class="checkbox" name="alchemist"></td>
+	</tr>
+	<tr style="">
+		<td><b>Blaze</b></td>
+		<td>- 1x Blaze Rod (Fire I)<br />- Fire Resistance</td>
+		<td>$3.50</td>
+		<td><input type="checkbox" class="checkbox" name="blaze"></td>
+	</tr>
+	<tr style="">
+		<td><b>Pyro</b></td>
+		<td>- 1x Bow (Flame I)<br />- 20x Arrows</td>
+		<td>$3.50</td>
+		<td><input type="checkbox" class="checkbox" name="pyro"></td>
+	</tr>
+	<tr style="">
+		<td><b>Scout</b></td>
+		<td>- Increased Speed<br />- High Jump<br />- 1x Stick (Knockback I)</td>
+		<td>$3.50</td>
+		<td><input type="checkbox" class="checkbox" name="scout"></td>
+	</tr>
+	<tr style="">
+		<td><b>Spawner</b></td>
+		<td>- 5x Slime Eggs<br />- 8x Zombie Eggs<br />- 1x Creeper Egg</td>
+		<td>$3.50</td>
+		<td><input type="checkbox" class="checkbox" name="spawner"></td>
+	</tr>
+</table>
+
+
+
+<script type="text/javascript">
+var kit_price = 3.50;
+</script>
+
+-->
+
+<div class="modal hide fade" id="play">
+	<div class="modal-header">
+		<a class="close" data-dismiss="modal">×</a>
+		<h3>How to Play</h3>
+	</div>
+	<div class="modal-body">
+		<img src="/assets/play.png" />
+	</div>
+	<div class="modal-footer">
+		<a href="#" data-dismiss="modal" class="btn btn-primary">Close</a>
+	</div>
+</div>
+<div class="modal hide fade" id="skywars-video">
+	<div class="modal-header">
+		<a class="close" data-dismiss="modal">×</a>
+		<h3>Sky Wars 2.0 by JJtCool</h3>
+	</div>
+	<div class="modal-body">
+		<iframe width="525" height="295" src="/_ext/www.youtube.com/embed/OTO7arbYUEI__rel=0.html" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="modal-footer">
+		<a href="#" data-dismiss="modal" class="btn btn-primary">Close</a>
+	</div>
+</div>
+
+<div class="modal hide fade" id="walls-video">
+	<div class="modal-header">
+		<a class="close" data-dismiss="modal">×</a>
+		<h3>The Walls by Hypixel</h3>
+	</div>
+	<div class="modal-body">
+		<iframe width="525" height="295" src="/_ext/www.youtube.com/embed/HLeXP15vkcM__rel=0.html" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="modal-footer">
+		<a href="#" data-dismiss="modal" class="btn btn-primary">Close</a>
+	</div>
+</div>
+
+<div class="modal hide fade" id="ghost-video">
+	<div class="modal-header">
+		<a class="close" data-dismiss="modal">×</a>
+		<h3>Ghost Squadron by Sethbling</h3>
+	</div>
+	<div class="modal-body">
+		<iframe width="525" height="295" src="/_ext/www.youtube.com/embed/I7HofiB687E__rel=0.html" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="modal-footer">
+		<a href="#" data-dismiss="modal" class="btn btn-primary">Close</a>
+	</div>
+</div>
+
+
+
+    <footer>
+      <hr />
+      <ul class="nav nav-pills">
+        <li class="pull-left">
+          <a>© 2013 MC Zone</a>
+        </li>
+        <li class="pull-right">
+          <a href="/about">About</a>
+        </li>
+        <li class="pull-right">
+          <a href="/infractions">Infractions</a>
+        </li>
+        <li class="pull-right">
+          <a href="/staff">Staff</a>
+        </li>
+        <li class="pull-right">
+          <a href="/rules">Rules</a>
+        </li>
+        <li class="pull-right">
+          <a href="/terms">Terms</a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+
+  <!-- Coolio Textboxes -->
+  <script type="text/javascript">
+  $('.textarea').each(function(i, elem) {
+    $(elem).wysihtml5();
+  });
+  </script>
+
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36634676-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+
+  <script src="/assets/custom.js?m=1" type="text/javascript"></script>
+</body>
+</html>

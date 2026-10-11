@@ -4,10 +4,8 @@ avatars/
 cdx*.json
 cdx*.txt
 
-# Generated mirror output (scrape.py build)
-site/
-site-v*/
-routes*.caddy
+# Build bookkeeping (scrape.py). The built sites and routes*.caddy are
+# tracked, since they are exactly what mczone.co serves.
 redirects.caddy
 manifest*.json
 missing*.txt

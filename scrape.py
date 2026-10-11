@@ -658,6 +658,16 @@ def caddy_str(v):
     return '"' + v.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
 
+# Players' personal email addresses show up in forum posts and profiles.
+# The network's own contact address stays; everything else is blanked.
+KEEP_EMAILS = {b"info@mczone.co"}
+EMAIL_RE = re.compile(rb"[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.(?!(?:png|jpe?g|gif)\b)[A-Za-z]{2,}")
+
+
+def redact_emails(data):
+    return EMAIL_RE.sub(lambda mo: mo.group(0) if mo.group(0).lower() in KEEP_EMAILS else b"[email removed]", data)
+
+
 def cmd_build():
     m = load_manifest()
     pages = site_pages(m)
@@ -840,6 +850,7 @@ def cmd_build():
             # can't serve copies left over from an earlier build.
             data = re.sub(rb'((?:href|src)=")(/[^"?#]+\.(?:css|js))(")',
                           lambda mo: mo.group(1) + mo.group(2) + b"?m=" + ASSET_VERSION + mo.group(3), data)
+            data = redact_emails(data)
             if b'<img class="game-image" style=' in data:
                 data = data.replace(b'<img class="game-image" style=', f'<img class="game-image" src="{blank}" style='.encode())
             with open(p, "wb") as f:

@@ -1,0 +1,536 @@
+body
+{
+	margin:50px 0 50px 0;
+	background: #F7F7F7;
+	background:url('/_ext/buycraft.net/assets/store/img/bg.png');
+}
+
+/* Minecraft skin renderer */
+.scratch 
+{
+	display:none;
+}
+
+.container
+{
+  margin-left:auto;
+  margin-right:auto;
+  width:860px;
+  padding:20px;
+  background-color: #fff;
+  border: 1px solid #C9C7C8;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  min-height:450px;
+}
+
+/**
+ * Basket price discounting
+ */
+.price-discount
+{
+	color:#FF0000; 
+	font-size:12px; 
+	font-style:italic; 
+	text-decoration:line-through;
+}
+
+/**
+ * Package customisation
+ */
+#package-price-input
+{
+	width:400px; 
+	height:30px; 
+	font-size:18px;
+	margin:10px 0 15px 0;
+}
+
+#package-price-currency
+{
+	width:90px; 
+	height:26px; 
+	font-size:22px; 
+	padding-top:8px;
+	margin:10px 0 15px 0;
+}
+
+#package-variable-dropdown
+{
+	width:515px; 
+	height:40px; 
+	font-size:18px;
+	margin:10px 0 15px 0;
+}
+
+#package-variable-input
+{
+	width:505px; 
+	height:30px; 
+	font-size:18px;
+	margin:10px 0 15px 0;
+}
+
+/**
+ * Header
+ */
+.header
+{
+	height:60px;
+	padding:0 0 20px 0;
+}
+
+.header .logo
+{
+	width:400px;
+	height:80px;
+	float:left;
+	position:relative;
+}
+
+.header .logo span
+{
+	font-size:24px;
+	font-weight:bold;
+	position:absolute;
+	vertical-align:middle;
+	top:30%;
+	height:60px;
+}
+
+.header .checkout
+{
+	margin:20px 0 0 0;
+	width:auto;
+	height:32px;
+	float:right;
+}
+
+/**
+ * Box containers
+ */
+.box-container
+{
+	width:100%;
+	margin:0 0 20px 0;
+}
+
+.box-container .header
+{
+	height:20px;
+	background-color: #EBEBEB;  
+	padding: 5px 15px 5px 10px;
+	font-size: 16px;
+	font-weight: bold;
+	border: 1px solid #D6D6D6;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	-webkit-border-radius-topright:5px;
+	-webkit-border-radius-topleft:5px;
+	-moz-border-radius-topright:5px;
+	-moz-border-radius-topleft:5px;
+}
+
+.box-container .header.separator
+{
+	border-top-left-radius:0;
+	border-top-right-radius:0;
+	-webkit-border-radius-topright:0;
+	-webkit-border-radius-topleft:0;
+	-moz-border-radius-topright:0;
+	-moz-border-radius-topleft:0;
+	border-top:0;
+}
+
+.box-container .empty-header
+{
+	background-color:#fff;
+  	border:1px solid #ddd;
+  	border-bottom:0;
+  	height:7px;
+  	-webkit-border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-topleft: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.box-container .content
+{
+	background-color:#fff;
+  	border:1px solid #ddd;
+  	border-top:0;
+  	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding:15px 10px 10px 10px;
+}
+
+.box-container .content.square
+{
+	-webkit-border-bottom-right-radius: 0;
+	-webkit-border-bottom-left-radius: 0;
+	-moz-border-radius-bottomright: 0;
+	-moz-border-radius-bottomleft: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+/**
+ * Basket dropdown
+ */
+.basket-dropdown
+{
+	width:auto;
+	margin-left:-135px;
+	min-width:300px;
+	padding:20px;
+}
+	
+.basket-dropdown .package
+{
+	height:20px;
+	margin:0 0 10px 0;
+	padding:0 0 10px 0;
+	font-size:14px;
+	border-bottom:1px solid #BDBDBD;
+}
+
+.basket-dropdown .package .name
+{
+	width:180px;
+	float:left;
+}
+
+.basket-dropdown .package .price
+{
+	width:95px;
+	float:left;
+	text-align:right;
+}
+
+.basket-dropdown .package .remove
+{
+	width:25px;
+	height:20px;
+	float:left;
+	text-align:right;
+}
+
+.basket-dropdown .total
+{
+	width:210px;
+	float:left;
+	margin:10px 0 0 0;
+	padding:4px 0 0 0;
+}
+
+.basket-dropdown .checkout
+{
+	margin:10px 0 0 0;
+	float:left;
+	text-align:right;
+	width:87px;
+}
+
+/**
+ * Basket contents
+ */
+.basket.contents
+{
+	margin:5px 0 25px 0;
+}
+
+.basket.contents .quantity
+{
+	width:20px;
+	text-align:center;
+}
+
+.basket.coupons
+{
+	margin:0 0 20px 0;
+}
+
+.basket.gateways > .gateway
+{
+	width:99px;
+	height:65px;
+	margin:15px 15px 0 -3px;
+	float:left;
+	font-size:12px;
+	text-align:center;
+}
+
+.basket.gateways > .gateway input[type=submit]
+{
+	width:99px;
+	height:66px;
+	border:0;
+	line-height:-9999px;
+	text-indent:-9999px; 
+	text-transform:capitalize;
+}
+
+.basket.gateways > .gateway input[type=submit]:hover
+{
+	opacity:0.7;
+}
+
+/**
+ * Checkout
+ */
+.checkout h4
+{
+	margin:0 0 20px 0;
+	padding:0 0 10px 0;
+	border-bottom:1px solid #E3E3E3;
+}
+
+/**
+ * Recent donators module
+ */
+ .recent-donator
+ {
+ 	margin:5px 0 10px 5px;
+ 	height:42px;
+ 	border-bottom:1px solid #F7F7F7;
+ }
+
+ .recent-donator:last-child
+ {
+ 	border-bottom:0;
+ 	margin-bottom:0;
+ }
+
+ .recent-donator .image
+ {
+ 	width:34px;
+ 	height:34px;
+ 	float:left;
+ }
+
+.recent-donator .info
+{
+	float:left;
+	width:220px;
+	margin:0 0 0 10px;
+}
+
+.recent-donator .info .name
+{
+ 	font-size:12px;
+ 	font-weight:bold;
+}
+
+.recent-donator .info .extra
+{
+	font-size:11px;
+	line-height:13px;
+}
+
+/**
+ * Top donator module
+ */
+.top-donator
+{
+	height:90px;
+}
+
+.top-donator .skin
+{
+	width:40px;
+	height:90px;
+	margin:0 25px 0 5px;
+	float:left;
+}
+
+.top-donator .info
+{
+	float:left;
+	height:90px;
+	width:190px;
+}
+
+.top-donator .info
+{
+	text-align:center;
+}
+
+.top-donator .info .ign
+{
+	font-size:24px;
+	margin:20px 0 5px 0;
+}
+
+.top-donator .info .extra
+{
+	font-size:12px;
+}
+
+/**
+ * Payment buttons
+ */
+.payment-buttons
+{
+	height:auto;
+	width:360px;
+	overflow:auto;
+}
+
+.payment-buttons .button
+{
+ 	width:102px;
+ 	height:64px;
+ 	float:left;
+ 	margin:15px 15px 0 0;
+}
+
+.payment-buttons #button-image
+{
+	border:0; 
+	cursor:pointer; 
+	line-height:999px;
+	overflow:hidden;
+	font-size:0;
+	width:102px; 
+	height:64px;
+}
+
+/**
+ * Username enter page
+ */
+.username-container
+{
+	width:400px;
+	height:45px;
+	float:left;
+}
+
+.username-container input[type=text]
+{
+	width:380px;
+	height:34px;
+	font-size:22px;
+}
+
+.username-button
+{
+	width:113px;
+	float:left;
+	height:45px;
+}
+
+/**
+ * Category package lists
+ */
+.category-package
+{
+	margin:0 25px 15px 30px;
+	width:200px;
+	height:220px;
+	float:left;
+}
+
+.category-package.featured
+{
+	margin:0 0 0 38px;
+	height:215px;
+}
+
+.category-package .image
+{
+	border:1px solid black;
+	padding:2px;
+	width:190px;
+	height:165px;
+	margin:0 auto 10px auto;
+}
+
+.category-package .image.borderless
+{
+	border:0;
+}
+
+.category-package .image:hover
+{
+	opacity:0.9;
+	cursor:pointer;
+}
+
+.category-package .info 
+{
+	width:133px;
+	height:35px;
+	float:left;
+	font-size:12px;
+	line-height:15px;
+}
+
+.category-package .info .name
+{
+	font-weight:bold;
+}
+
+.category-package .buttons
+{
+	float:left;
+	text-align:right;
+	width:65px;
+}
+
+/**
+ * Footer
+ */
+.footer
+{
+	margin:20px auto 50px auto;
+	width:900px;
+	font-size:14px;
+}
+
+.footer .language
+{
+	float:left;
+}
+
+.footer .poweredby
+{
+	float:right;
+}
+
+/**
+ * Notification bar
+ */
+#notification-bar
+{
+  border: 1px solid;
+  text-align:center;
+  margin:0 0 20px 0;
+  padding:10px 5px 10px 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display:none;
+  font-size:14px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+#notification-bar.error
+{
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}
+
+#notification-bar.success
+{
+  color: #468847;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}

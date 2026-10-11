@@ -1,0 +1,2363 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MC Zone » Sky Wars</title>
+  <link href="/assets/style.css?m=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/custom.css?m=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/application.css?m=1" media="all" rel="stylesheet" type="text/css" />
+  <script src="/assets/application.js?m=1" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="irufWGq5AnC76xr+qOCiGP+21vph0w7WsJYw6jQdbQw=" name="csrf-token" />
+<script src="/_mirror/mirror.js?m=1" defer></script></head>
+<body>
+  <div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/">
+        <i class="icon-globe"></i>
+        MC Zone
+      </a>
+      <div class="nav-collapse">
+        <ul class="nav pull-right">
+
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Account 
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-header">Logged in as: Guest</li>
+              <li>
+                <a href="/login">Login</a>
+              </li>
+              <li>
+                <a href="/register">Register</a>
+              </li>
+            </ul>
+          </li>
+        </li>
+      </ul>
+        <ul class="nav links pull-right">
+          <li class="active">
+            <a href="/servers">
+              <i class="icon-hdd"></i>
+              Servers
+            </a>
+          </li>
+          <li class="">
+            <a href="/shop">
+              <i class="icon-shopping-cart"></i>
+              Shop
+            </a>
+          </li>
+          <li class="">
+            <a href="/forum">
+              <i class="icon-book"></i>
+              Forum
+            </a>
+          </li>
+          <li class="">
+            <a href="/vote">
+              <i class="icon-check"></i>
+              Vote
+            </a>
+          </li>
+          <li class="">
+            <a href="/profiles">
+              <i class="icon-user"></i>
+              Profiles
+            </a>
+          </li>
+        </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+  <div class="container">
+
+
+
+    <br />
+
+
+    
+<header class="subhead">
+	<div class="container">
+		<h1>Sky Wars 2.0</h1>
+		<p class="lead">
+			Three teams spawn on separate sky islands. Various small islands separate the two teams. Find weapons 
+			and armor to defeat the other team in a battle to the death. Once one team has no players left, 
+			the game will end.
+		</p>
+		<a class="btn btn-inverse btn-large" data-toggle="modal" href="#skywars-video">Video »</a>
+		<a class="btn btn-primary btn-large" data-toggle="modal" href="#play">Play Now »</a>
+	</div>
+</header>
+
+<br />
+
+<div class="tabbable tabs-left">
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#tab-kits" data-toggle="tab">Kits</a></li>
+		<li><a href="#tab-month" data-toggle="tab">Top 100 Monthly</a></li>
+		<li><a href="#tab-top" data-toggle="tab">Top 100 Overall</a></li>
+		<li><a href="#tab-recent" data-toggle="tab">Recent Games</a></li>
+	</ul>
+
+	<div class="tab-content">
+		<h3>Buy Kits</h3>
+
+		<p>The kit shop has been moved to the <a href="/shop/">shop</a>.</p>
+
+		<!--
+		<div class="tab-pane active" id="tab-kits">
+			<h3>Buy Kits <small>Kits purchased will be delivered within 5 minutes</small></h3>
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="form-inline fancy-kits-form pull-right" style="margin-top:15px;">
+				<div class="input-prepend">
+					<span class="add-on">Username: </span>
+					<input type="text" name="custom" id="custom" autocomplete="off" class="span2 username" style="width: 120px;">
+				</div>
+				<input type="hidden" name="item_name" class="item_name" value="">
+				<input type="hidden" name="cmd" value="_xclick">
+				<input type="hidden" name="business" value="info@mczone.co">
+				<input type="hidden" name="item_number" value="1">  
+				<input type="hidden" name="amount" class="price" value="0">  
+				<input type="hidden" name="no_shipping" value="0">  
+				<input type="hidden" name="no_note" value="1">  
+				<input type="hidden" name="currency_code" value="USD">  
+				<input type="hidden" name="lc" value="AU">
+				<input type="hidden" name="bn" value="PP-BuyNowBF">  
+				<input type="hidden" name="notify_url" value="http://mczone.co/ipn/skywars" />
+				<input type="hidden" name="return" value="http://mczone.co?notify=payment">
+				<button type="submit" disabled="disabled" class="btn btn-success check item_price">Purchase Cart ($0.00)</button>
+			</form>
+
+			<table class="table">
+				<thead>
+					<th>Kit Name</th>
+					<th>About</th>
+					<th>Times Used</th>
+					<th>Price</th>
+					<th>Cart</th>
+				</thead>
+				<tr style="">
+					<td><b>Enchanter</b></td>
+					<td>- Wood Sword<br />- 3x enderpearl<br />- 48x exp bottle<br />- 8x bookshelf</td>
+					<td>27007</td>
+					<td>$2.49</td>
+					<td><input type="checkbox" class="checkbox" name="enchanter"></td>
+				</tr>
+				<tr style="">
+					<td><b>Enderman</b></td>
+					<td>- Wood Sword<br />- 16x enderpearl</td>
+					<td>28058</td>
+					<td>$2.49</td>
+					<td><input type="checkbox" class="checkbox" name="enderman"></td>
+				</tr>
+				<tr style="">
+					<td><b>Engineer</b></td>
+					<td>- Wood Sword<br />- 3x enderpearl<br />- 5x TNT<br />- 3x Redstone Torch</td>
+					<td>23959</td>
+					<td>$2.49</td>
+					<td><input type="checkbox" class="checkbox" name="engineer"></td>
+				</tr>
+				<tr style="">
+					<td><b>Healer</b></td>
+					<td>- Wood Sword<br />- 3x enderpearl<br />- 1x Health Potion<br />- 3x Health Splash</td>
+					<td>17026</td>
+					<td>$2.49</td>
+					<td><input type="checkbox" class="checkbox" name="healer"></td>
+				</tr>
+				<tr style="">
+					<td><b>Heavy</b></td>
+					<td>- Wood Sword<br />- 3x enderpearl<br />- Iron Chestplate<br />- Leather Leggings<br />- Leather Boots</td>
+					<td>60401</td>
+					<td>$2.49</td>
+					<td><input type="checkbox" class="checkbox" name="heavy"></td>
+				</tr>
+				<tr style="">
+					<td><b>Miner</b></td>
+					<td>- Wood Sword<br />- 3x enderpearl<br />- Iron Pickaxe</td>
+					<td>36239</td>
+					<td>$2.49</td>
+					<td><input type="checkbox" class="checkbox" name="miner"></td>
+				</tr>
+				<tr style="">
+					<td><b>Pyro</b></td>
+					<td>- Wood Sword<br />- 3x enderpearl<br />- Bow (Power 1)<br />- 64x arrow</td>
+					<td>33550</td>
+					<td>$2.49</td>
+					<td><input type="checkbox" class="checkbox" name="pyro"></td>
+				</tr>
+				<tr style="">
+					<td><b>Scout</b></td>
+					<td>- Wood Sword<br />- 3x enderpearl<br />- 1x Speed Splash<br />- 1x Speed Potion</td>
+					<td>19214</td>
+					<td>$2.49</td>
+					<td><input type="checkbox" class="checkbox" name="scout"></td>
+				</tr>
+				<tr style="">
+					<td><b>Warrior</b></td>
+					<td>- Stone Sword<br />- 3x enderpearl<br />- 1x Strength Splash</td>
+					<td>41847</td>
+					<td>$2.49</td>
+					<td><input type="checkbox" class="checkbox" name="warrior"></td>
+				</tr>
+			</table>
+
+			-->
+		</div>
+		<div class="tab-pane" id="tab-month">
+			<h3>Top 100 Players This Month</h3>
+			<table class="table table-sort">
+				<thead>
+					<th>#</th>
+					<th>Username</th>
+					<th class="tip sorting_1" title="Wins x 10 + Kills">Points</th>
+					<th>Wins</th>
+					<th>Deaths</th>
+					<th>Kills</th>
+					<th>K/D</th>
+				</thead>
+				<tr>
+					<td>1</td>
+					<td><img src="/_avatars/minotar.net/venomlove/16.png" /> <a href="/venomlove"><span style="font-weight: ; color: ">venomlove</a></td>
+					<td>1304</td>
+					<td>40</td>
+					<td>91</td>
+					<td>452</td>
+					<td>4.97</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td><img src="/_avatars/minotar.net/abbadihouda/16.png" /> <a href="/abbadihouda"><span style="font-weight: ; color: ">abbadihouda</a></td>
+					<td>1304</td>
+					<td>36</td>
+					<td>207</td>
+					<td>472</td>
+					<td>2.28</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td><img src="/_avatars/minotar.net/44Alex99/16.png" /> <a href="/44Alex99"><span style="font-weight: ; color: ">44Alex99</a></td>
+					<td>1122</td>
+					<td>22</td>
+					<td>230</td>
+					<td>451</td>
+					<td>1.96</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td><img src="/_avatars/minotar.net/xXT0XiCHoBoxX/16.png" /> <a href="/xXT0XiCHoBoxX"><span style="font-weight: ; color: ">xXT0XiCHoBoxX</a></td>
+					<td>1070</td>
+					<td>42</td>
+					<td>171</td>
+					<td>325</td>
+					<td>1.90</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td><img src="/_avatars/minotar.net/Daniel_Deliz/16.png" /> <a href="/Daniel_Deliz"><span style="font-weight: ; color: ">Daniel_Deliz</a></td>
+					<td>1066</td>
+					<td>36</td>
+					<td>257</td>
+					<td>353</td>
+					<td>1.37</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td><img src="/_avatars/minotar.net/denisonok/16.png" /> <a href="/denisonok"><span style="font-weight: ; color: ">denisonok</a></td>
+					<td>912</td>
+					<td>29</td>
+					<td>35</td>
+					<td>311</td>
+					<td>8.89</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td><img src="/_avatars/minotar.net/richdude9/16.png" /> <a href="/richdude9"><span style="font-weight: ; color: ">richdude9</a></td>
+					<td>824</td>
+					<td>21</td>
+					<td>239</td>
+					<td>307</td>
+					<td>1.28</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td><img src="/_avatars/minotar.net/ThunderheartX/16.png" /> <a href="/ThunderheartX"><span style="font-weight: ; color: ">ThunderheartX</a></td>
+					<td>804</td>
+					<td>32</td>
+					<td>47</td>
+					<td>242</td>
+					<td>5.15</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td><img src="/_avatars/minotar.net/Tiggywiz/16.png" /> <a href="/Tiggywiz"><span style="font-weight: ; color: ">Tiggywiz</a></td>
+					<td>758</td>
+					<td>34</td>
+					<td>293</td>
+					<td>209</td>
+					<td>0.71</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td><img src="/_avatars/minotar.net/aiolos101/16.png" /> <a href="/aiolos101"><span style="font-weight: ; color: ">aiolos101</a></td>
+					<td>690</td>
+					<td>29</td>
+					<td>69</td>
+					<td>200</td>
+					<td>2.90</td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td><img src="/_avatars/minotar.net/glore24/16.png" /> <a href="/glore24"><span style="font-weight: ; color: ">glore24</a></td>
+					<td>642</td>
+					<td>28</td>
+					<td>134</td>
+					<td>181</td>
+					<td>1.35</td>
+				</tr>
+				<tr>
+					<td>12</td>
+					<td><img src="/_avatars/minotar.net/waulrus/16.png" /> <a href="/waulrus"><span style="font-weight: ; color: ">waulrus</a></td>
+					<td>636</td>
+					<td>22</td>
+					<td>55</td>
+					<td>208</td>
+					<td>3.78</td>
+				</tr>
+				<tr>
+					<td>13</td>
+					<td><img src="/_avatars/minotar.net/Cole107/16.png" /> <a href="/Cole107"><span style="font-weight: ; color: ">Cole107</a></td>
+					<td>604</td>
+					<td>21</td>
+					<td>72</td>
+					<td>197</td>
+					<td>2.74</td>
+				</tr>
+				<tr>
+					<td>14</td>
+					<td><img src="/_avatars/minotar.net/romabu1/16.png" /> <a href="/romabu1"><span style="font-weight: ; color: ">romabu1</a></td>
+					<td>578</td>
+					<td>4</td>
+					<td>121</td>
+					<td>269</td>
+					<td>2.22</td>
+				</tr>
+				<tr>
+					<td>15</td>
+					<td><img src="/_avatars/minotar.net/JarrodsJarrod/16.png" /> <a href="/JarrodsJarrod"><span style="font-weight: ; color: ">JarrodsJarrod</a></td>
+					<td>546</td>
+					<td>22</td>
+					<td>58</td>
+					<td>163</td>
+					<td>2.81</td>
+				</tr>
+				<tr>
+					<td>16</td>
+					<td><img src="/_avatars/minotar.net/Abs0luteXer0/16.png" /> <a href="/Abs0luteXer0"><span style="font-weight: ; color: ">Abs0luteXer0</a></td>
+					<td>534</td>
+					<td>20</td>
+					<td>26</td>
+					<td>167</td>
+					<td>6.42</td>
+				</tr>
+				<tr>
+					<td>17</td>
+					<td><img src="/_avatars/minotar.net/Party_Enderman/16.png" /> <a href="/Party_Enderman"><span style="font-weight: ; color: ">Party_Enderman</a></td>
+					<td>528</td>
+					<td>19</td>
+					<td>139</td>
+					<td>169</td>
+					<td>1.22</td>
+				</tr>
+				<tr>
+					<td>18</td>
+					<td><img src="/_avatars/minotar.net/XxXxDragoxXxX/16.png" /> <a href="/XxXxDragoxXxX"><span style="font-weight: ; color: ">XxXxDragoxXxX</a></td>
+					<td>506</td>
+					<td>18</td>
+					<td>65</td>
+					<td>163</td>
+					<td>2.51</td>
+				</tr>
+				<tr>
+					<td>19</td>
+					<td><img src="/_avatars/minotar.net/LudwigFTW/16.png" /> <a href="/LudwigFTW"><span style="font-weight: ; color: ">LudwigFTW</a></td>
+					<td>484</td>
+					<td>14</td>
+					<td>111</td>
+					<td>172</td>
+					<td>1.55</td>
+				</tr>
+				<tr>
+					<td>20</td>
+					<td><img src="/_avatars/minotar.net/tbdtbd11/16.png" /> <a href="/tbdtbd11"><span style="font-weight: ; color: ">tbdtbd11</a></td>
+					<td>478</td>
+					<td>27</td>
+					<td>69</td>
+					<td>104</td>
+					<td>1.51</td>
+				</tr>
+				<tr>
+					<td>21</td>
+					<td><img src="/_avatars/minotar.net/AXtrego/16.png" /> <a href="/AXtrego"><span style="font-weight: ; color: ">AXtrego</a></td>
+					<td>478</td>
+					<td>13</td>
+					<td>30</td>
+					<td>174</td>
+					<td>5.80</td>
+				</tr>
+				<tr>
+					<td>22</td>
+					<td><img src="/_avatars/minotar.net/eSVisser/16.png" /> <a href="/eSVisser"><span style="font-weight: ; color: ">eSVisser</a></td>
+					<td>476</td>
+					<td>17</td>
+					<td>66</td>
+					<td>153</td>
+					<td>2.32</td>
+				</tr>
+				<tr>
+					<td>23</td>
+					<td><img src="/_avatars/minotar.net/Hex_Agony/16.png" /> <a href="/Hex_Agony"><span style="font-weight: ; color: ">Hex_Agony</a></td>
+					<td>444</td>
+					<td>12</td>
+					<td>58</td>
+					<td>162</td>
+					<td>2.79</td>
+				</tr>
+				<tr>
+					<td>24</td>
+					<td><img src="/_avatars/minotar.net/spiritofdead/16.png" /> <a href="/spiritofdead"><span style="font-weight: ; color: ">spiritofdead</a></td>
+					<td>444</td>
+					<td>11</td>
+					<td>17</td>
+					<td>167</td>
+					<td>9.82</td>
+				</tr>
+				<tr>
+					<td>25</td>
+					<td><img src="/_avatars/minotar.net/cjcat/16.png" /> <a href="/cjcat"><span style="font-weight: ; color: ">cjcat</a></td>
+					<td>428</td>
+					<td>9</td>
+					<td>91</td>
+					<td>169</td>
+					<td>1.86</td>
+				</tr>
+				<tr>
+					<td>26</td>
+					<td><img src="/_avatars/minotar.net/22bulldog/16.png" /> <a href="/22bulldog"><span style="font-weight: ; color: ">22bulldog</a></td>
+					<td>424</td>
+					<td>18</td>
+					<td>65</td>
+					<td>122</td>
+					<td>1.88</td>
+				</tr>
+				<tr>
+					<td>27</td>
+					<td><img src="/_avatars/minotar.net/Pr1smbreak/16.png" /> <a href="/Pr1smbreak"><span style="font-weight: ; color: ">Pr1smbreak</a></td>
+					<td>422</td>
+					<td>13</td>
+					<td>65</td>
+					<td>146</td>
+					<td>2.25</td>
+				</tr>
+				<tr>
+					<td>28</td>
+					<td><img src="/_avatars/minotar.net/_Ivan184_/16.png" /> <a href="/_Ivan184_"><span style="font-weight: ; color: ">_Ivan184_</a></td>
+					<td>416</td>
+					<td>22</td>
+					<td>21</td>
+					<td>98</td>
+					<td>4.67</td>
+				</tr>
+				<tr>
+					<td>29</td>
+					<td><img src="/_avatars/minotar.net/Crazy_Iban/16.png" /> <a href="/Crazy_Iban"><span style="font-weight: ; color: ">Crazy_Iban</a></td>
+					<td>408</td>
+					<td>15</td>
+					<td>36</td>
+					<td>129</td>
+					<td>3.58</td>
+				</tr>
+				<tr>
+					<td>30</td>
+					<td><img src="/_avatars/minotar.net/jimoua/16.png" /> <a href="/jimoua"><span style="font-weight: ; color: ">jimoua</a></td>
+					<td>384</td>
+					<td>25</td>
+					<td>48</td>
+					<td>67</td>
+					<td>1.40</td>
+				</tr>
+				<tr>
+					<td>31</td>
+					<td><img src="/_avatars/minotar.net/MisterSwag1234/16.png" /> <a href="/MisterSwag1234"><span style="font-weight: ; color: ">MisterSwag1234</a></td>
+					<td>378</td>
+					<td>9</td>
+					<td>96</td>
+					<td>144</td>
+					<td>1.50</td>
+				</tr>
+				<tr>
+					<td>32</td>
+					<td><img src="/_avatars/minotar.net/SaudCrft/16.png" /> <a href="/SaudCrft"><span style="font-weight: ; color: ">SaudCrft</a></td>
+					<td>378</td>
+					<td>15</td>
+					<td>80</td>
+					<td>114</td>
+					<td>1.43</td>
+				</tr>
+				<tr>
+					<td>33</td>
+					<td><img src="/_avatars/minotar.net/louisezra/16.png" /> <a href="/louisezra"><span style="font-weight: ; color: ">louisezra</a></td>
+					<td>376</td>
+					<td>13</td>
+					<td>145</td>
+					<td>123</td>
+					<td>0.85</td>
+				</tr>
+				<tr>
+					<td>34</td>
+					<td><img src="/_avatars/minotar.net/AJH900/16.png" /> <a href="/AJH900"><span style="font-weight: ; color: ">AJH900</a></td>
+					<td>370</td>
+					<td>16</td>
+					<td>48</td>
+					<td>105</td>
+					<td>2.19</td>
+				</tr>
+				<tr>
+					<td>35</td>
+					<td><img src="/_avatars/minotar.net/popcornkake/16.png" /> <a href="/popcornkake"><span style="font-weight: ; color: ">popcornkake</a></td>
+					<td>368</td>
+					<td>17</td>
+					<td>63</td>
+					<td>99</td>
+					<td>1.57</td>
+				</tr>
+				<tr>
+					<td>36</td>
+					<td><img src="/_avatars/minotar.net/onaf/16.png" /> <a href="/onaf"><span style="font-weight: ; color: ">onaf</a></td>
+					<td>362</td>
+					<td>7</td>
+					<td>42</td>
+					<td>146</td>
+					<td>3.48</td>
+				</tr>
+				<tr>
+					<td>37</td>
+					<td><img src="/_avatars/minotar.net/jeremyw0331/16.png" /> <a href="/jeremyw0331"><span style="font-weight: ; color: ">jeremyw0331</a></td>
+					<td>358</td>
+					<td>10</td>
+					<td>143</td>
+					<td>129</td>
+					<td>0.90</td>
+				</tr>
+				<tr>
+					<td>38</td>
+					<td><img src="/_avatars/minotar.net/ggeggegge/16.png" /> <a href="/ggeggegge"><span style="font-weight: ; color: ">ggeggegge</a></td>
+					<td>358</td>
+					<td>12</td>
+					<td>87</td>
+					<td>119</td>
+					<td>1.37</td>
+				</tr>
+				<tr>
+					<td>39</td>
+					<td><img src="/_avatars/minotar.net/ihuntmonster/16.png" /> <a href="/ihuntmonster"><span style="font-weight: ; color: ">ihuntmonster</a></td>
+					<td>356</td>
+					<td>14</td>
+					<td>52</td>
+					<td>108</td>
+					<td>2.08</td>
+				</tr>
+				<tr>
+					<td>40</td>
+					<td><img src="/_avatars/minotar.net/SuicidalMuffin/16.png" /> <a href="/SuicidalMuffin"><span style="font-weight: ; color: ">SuicidalMuffin</a></td>
+					<td>354</td>
+					<td>14</td>
+					<td>40</td>
+					<td>107</td>
+					<td>2.68</td>
+				</tr>
+				<tr>
+					<td>41</td>
+					<td><img src="/_avatars/minotar.net/JoshSeamus/16.png" /> <a href="/JoshSeamus"><span style="font-weight: ; color: ">JoshSeamus</a></td>
+					<td>354</td>
+					<td>11</td>
+					<td>74</td>
+					<td>122</td>
+					<td>1.65</td>
+				</tr>
+				<tr>
+					<td>42</td>
+					<td><img src="/_avatars/minotar.net/SupremeTaco99/16.png" /> <a href="/SupremeTaco99"><span style="font-weight: ; color: gold">SupremeTaco99</a></td>
+					<td>352</td>
+					<td>14</td>
+					<td>48</td>
+					<td>106</td>
+					<td>2.21</td>
+				</tr>
+				<tr>
+					<td>43</td>
+					<td><img src="/_avatars/minotar.net/Madoldboy/16.png" /> <a href="/Madoldboy"><span style="font-weight: ; color: ">Madoldboy</a></td>
+					<td>352</td>
+					<td>8</td>
+					<td>28</td>
+					<td>136</td>
+					<td>4.86</td>
+				</tr>
+				<tr>
+					<td>44</td>
+					<td><img src="/_avatars/minotar.net/ABB13/16.png" /> <a href="/ABB13"><span style="font-weight: ; color: ">ABB13</a></td>
+					<td>348</td>
+					<td>15</td>
+					<td>89</td>
+					<td>99</td>
+					<td>1.11</td>
+				</tr>
+				<tr>
+					<td>45</td>
+					<td><img src="/_avatars/minotar.net/XoticBean/16.png" /> <a href="/XoticBean"><span style="font-weight: ; color: ">XoticBean</a></td>
+					<td>348</td>
+					<td>15</td>
+					<td>44</td>
+					<td>99</td>
+					<td>2.25</td>
+				</tr>
+				<tr>
+					<td>46</td>
+					<td><img src="/_avatars/minotar.net/Freddesamba/16.png" /> <a href="/Freddesamba"><span style="font-weight: ; color: ">Freddesamba</a></td>
+					<td>334</td>
+					<td>10</td>
+					<td>59</td>
+					<td>117</td>
+					<td>1.98</td>
+				</tr>
+				<tr>
+					<td>47</td>
+					<td><img src="/_avatars/minotar.net/darkface06/16.png" /> <a href="/darkface06"><span style="font-weight: ; color: ">darkface06</a></td>
+					<td>334</td>
+					<td>11</td>
+					<td>165</td>
+					<td>112</td>
+					<td>0.68</td>
+				</tr>
+				<tr>
+					<td>48</td>
+					<td><img src="/_avatars/minotar.net/tryme3/16.png" /> <a href="/tryme3"><span style="font-weight: ; color: ">tryme3</a></td>
+					<td>326</td>
+					<td>11</td>
+					<td>31</td>
+					<td>108</td>
+					<td>3.48</td>
+				</tr>
+				<tr>
+					<td>49</td>
+					<td><img src="/_avatars/minotar.net/Marcelman002/16.png" /> <a href="/Marcelman002"><span style="font-weight: ; color: green">Marcelman002</a></td>
+					<td>324</td>
+					<td>13</td>
+					<td>233</td>
+					<td>97</td>
+					<td>0.42</td>
+				</tr>
+				<tr>
+					<td>50</td>
+					<td><img src="/_avatars/minotar.net/FootballBastard/16.png" /> <a href="/FootballBastard"><span style="font-weight: ; color: ">FootballBastard</a></td>
+					<td>320</td>
+					<td>11</td>
+					<td>63</td>
+					<td>105</td>
+					<td>1.67</td>
+				</tr>
+				<tr>
+					<td>51</td>
+					<td><img src="/_avatars/minotar.net/chickencharlie/16.png" /> <a href="/chickencharlie"><span style="font-weight: ; color: ">chickencharlie</a></td>
+					<td>320</td>
+					<td>15</td>
+					<td>247</td>
+					<td>85</td>
+					<td>0.34</td>
+				</tr>
+				<tr>
+					<td>52</td>
+					<td><img src="/_avatars/minotar.net/snoopcat98/16.png" /> <a href="/snoopcat98"><span style="font-weight: ; color: ">snoopcat98</a></td>
+					<td>312</td>
+					<td>12</td>
+					<td>65</td>
+					<td>96</td>
+					<td>1.48</td>
+				</tr>
+				<tr>
+					<td>53</td>
+					<td><img src="/_avatars/minotar.net/djcg/16.png" /> <a href="/djcg"><span style="font-weight: ; color: ">djcg</a></td>
+					<td>312</td>
+					<td>5</td>
+					<td>81</td>
+					<td>131</td>
+					<td>1.62</td>
+				</tr>
+				<tr>
+					<td>54</td>
+					<td><img src="/_avatars/minotar.net/opb543/16.png" /> <a href="/opb543"><span style="font-weight: ; color: ">opb543</a></td>
+					<td>312</td>
+					<td>12</td>
+					<td>35</td>
+					<td>96</td>
+					<td>2.74</td>
+				</tr>
+				<tr>
+					<td>55</td>
+					<td><img src="/_avatars/minotar.net/Kozid/16.png" /> <a href="/Kozid"><span style="font-weight: ; color: ">Kozid</a></td>
+					<td>308</td>
+					<td>17</td>
+					<td>59</td>
+					<td>69</td>
+					<td>1.17</td>
+				</tr>
+				<tr>
+					<td>56</td>
+					<td><img src="/_avatars/minotar.net/monino04/16.png" /> <a href="/monino04"><span style="font-weight: ; color: ">monino04</a></td>
+					<td>306</td>
+					<td>11</td>
+					<td>66</td>
+					<td>98</td>
+					<td>1.48</td>
+				</tr>
+				<tr>
+					<td>57</td>
+					<td><img src="/_avatars/minotar.net/connor3k8/16.png" /> <a href="/connor3k8"><span style="font-weight: ; color: ">connor3k8</a></td>
+					<td>302</td>
+					<td>13</td>
+					<td>50</td>
+					<td>86</td>
+					<td>1.72</td>
+				</tr>
+				<tr>
+					<td>58</td>
+					<td><img src="/_avatars/minotar.net/OneShotGunNinja/16.png" /> <a href="/OneShotGunNinja"><span style="font-weight: ; color: ">OneShotGunNinja</a></td>
+					<td>302</td>
+					<td>11</td>
+					<td>81</td>
+					<td>96</td>
+					<td>1.19</td>
+				</tr>
+				<tr>
+					<td>59</td>
+					<td><img src="/_avatars/minotar.net/speaker_24/16.png" /> <a href="/speaker_24"><span style="font-weight: ; color: ">speaker_24</a></td>
+					<td>298</td>
+					<td>7</td>
+					<td>33</td>
+					<td>114</td>
+					<td>3.45</td>
+				</tr>
+				<tr>
+					<td>60</td>
+					<td><img src="/_avatars/minotar.net/sammaster54280/16.png" /> <a href="/sammaster54280"><span style="font-weight: ; color: ">sammaster54280</a></td>
+					<td>296</td>
+					<td>12</td>
+					<td>26</td>
+					<td>88</td>
+					<td>3.38</td>
+				</tr>
+				<tr>
+					<td>61</td>
+					<td><img src="/_avatars/minotar.net/snakevenom127/16.png" /> <a href="/snakevenom127"><span style="font-weight: ; color: ">snakevenom127</a></td>
+					<td>294</td>
+					<td>8</td>
+					<td>43</td>
+					<td>107</td>
+					<td>2.49</td>
+				</tr>
+				<tr>
+					<td>62</td>
+					<td><img src="/_avatars/minotar.net/luv_food27/16.png" /> <a href="/luv_food27"><span style="font-weight: ; color: ">luv_food27</a></td>
+					<td>292</td>
+					<td>9</td>
+					<td>59</td>
+					<td>101</td>
+					<td>1.71</td>
+				</tr>
+				<tr>
+					<td>63</td>
+					<td><img src="/_avatars/minotar.net/n00n2013/16.png" /> <a href="/n00n2013"><span style="font-weight: ; color: ">n00n2013</a></td>
+					<td>292</td>
+					<td>11</td>
+					<td>70</td>
+					<td>91</td>
+					<td>1.30</td>
+				</tr>
+				<tr>
+					<td>64</td>
+					<td><img src="/_avatars/minotar.net/Gerlgirlgerlgirl/16.png" /> <a href="/Gerlgirlgerlgirl"><span style="font-weight: ; color: ">Gerlgirlgerlgirl</a></td>
+					<td>290</td>
+					<td>5</td>
+					<td>77</td>
+					<td>120</td>
+					<td>1.56</td>
+				</tr>
+				<tr>
+					<td>65</td>
+					<td><img src="/_avatars/minotar.net/LinneusOlsson/16.png" /> <a href="/LinneusOlsson"><span style="font-weight: ; color: ">LinneusOlsson</a></td>
+					<td>290</td>
+					<td>18</td>
+					<td>35</td>
+					<td>55</td>
+					<td>1.57</td>
+				</tr>
+				<tr>
+					<td>66</td>
+					<td><img src="/_avatars/minotar.net/Cezbla/16.png" /> <a href="/Cezbla"><span style="font-weight: ; color: ">Cezbla</a></td>
+					<td>286</td>
+					<td>7</td>
+					<td>32</td>
+					<td>108</td>
+					<td>3.38</td>
+				</tr>
+				<tr>
+					<td>67</td>
+					<td><img src="/_avatars/minotar.net/TheAnnihilatore/16.png" /> <a href="/TheAnnihilatore"><span style="font-weight: ; color: ">TheAnnihilatore</a></td>
+					<td>280</td>
+					<td>11</td>
+					<td>31</td>
+					<td>85</td>
+					<td>2.74</td>
+				</tr>
+				<tr>
+					<td>68</td>
+					<td><img src="/_avatars/minotar.net/Dipthatchip/16.png" /> <a href="/Dipthatchip"><span style="font-weight: ; color: ">Dipthatchip</a></td>
+					<td>278</td>
+					<td>8</td>
+					<td>23</td>
+					<td>99</td>
+					<td>4.30</td>
+				</tr>
+				<tr>
+					<td>69</td>
+					<td><img src="/_avatars/minotar.net/falfootball23/16.png" /> <a href="/falfootball23"><span style="font-weight: ; color: ">falfootball23</a></td>
+					<td>278</td>
+					<td>8</td>
+					<td>25</td>
+					<td>99</td>
+					<td>3.96</td>
+				</tr>
+				<tr>
+					<td>70</td>
+					<td><img src="/_avatars/minotar.net/ImSoEpicz/16.png" /> <a href="/ImSoEpicz"><span style="font-weight: ; color: ">ImSoEpicz</a></td>
+					<td>274</td>
+					<td>7</td>
+					<td>109</td>
+					<td>102</td>
+					<td>0.94</td>
+				</tr>
+				<tr>
+					<td>71</td>
+					<td><img src="/_avatars/minotar.net/funnybunny3697/16.png" /> <a href="/funnybunny3697"><span style="font-weight: ; color: ">funnybunny3697</a></td>
+					<td>272</td>
+					<td>8</td>
+					<td>59</td>
+					<td>96</td>
+					<td>1.63</td>
+				</tr>
+				<tr>
+					<td>72</td>
+					<td><img src="/_avatars/minotar.net/Jimmy_Teh_5th/16.png" /> <a href="/Jimmy_Teh_5th"><span style="font-weight: ; color: ">Jimmy_Teh_5th</a></td>
+					<td>270</td>
+					<td>6</td>
+					<td>51</td>
+					<td>105</td>
+					<td>2.06</td>
+				</tr>
+				<tr>
+					<td>73</td>
+					<td><img src="/_avatars/minotar.net/KevinTheBeast726/16.png" /> <a href="/KevinTheBeast726"><span style="font-weight: ; color: ">KevinTheBeast726</a></td>
+					<td>268</td>
+					<td>8</td>
+					<td>130</td>
+					<td>94</td>
+					<td>0.72</td>
+				</tr>
+				<tr>
+					<td>74</td>
+					<td><img src="/_avatars/minotar.net/axemina6/16.png" /> <a href="/axemina6"><span style="font-weight: ; color: gold">axemina6</a></td>
+					<td>266</td>
+					<td>9</td>
+					<td>34</td>
+					<td>88</td>
+					<td>2.59</td>
+				</tr>
+				<tr>
+					<td>75</td>
+					<td><img src="/_avatars/minotar.net/NathanBermudez/16.png" /> <a href="/NathanBermudez"><span style="font-weight: ; color: ">NathanBermudez</a></td>
+					<td>264</td>
+					<td>9</td>
+					<td>90</td>
+					<td>87</td>
+					<td>0.97</td>
+				</tr>
+				<tr>
+					<td>76</td>
+					<td><img src="/_avatars/minotar.net/yalimoshonov/16.png" /> <a href="/yalimoshonov"><span style="font-weight: ; color: ">yalimoshonov</a></td>
+					<td>262</td>
+					<td>12</td>
+					<td>91</td>
+					<td>71</td>
+					<td>0.78</td>
+				</tr>
+				<tr>
+					<td>77</td>
+					<td><img src="/_avatars/minotar.net/hammy1003/16.png" /> <a href="/hammy1003"><span style="font-weight: ; color: ">hammy1003</a></td>
+					<td>260</td>
+					<td>11</td>
+					<td>74</td>
+					<td>75</td>
+					<td>1.01</td>
+				</tr>
+				<tr>
+					<td>78</td>
+					<td><img src="/_avatars/minotar.net/petpet101/16.png" /> <a href="/petpet101"><span style="font-weight: ; color: ">petpet101</a></td>
+					<td>258</td>
+					<td>8</td>
+					<td>34</td>
+					<td>89</td>
+					<td>2.62</td>
+				</tr>
+				<tr>
+					<td>79</td>
+					<td><img src="/_avatars/minotar.net/_MontyPython_/16.png" /> <a href="/_MontyPython_"><span style="font-weight: ; color: ">_MontyPython_</a></td>
+					<td>258</td>
+					<td>11</td>
+					<td>15</td>
+					<td>74</td>
+					<td>4.93</td>
+				</tr>
+				<tr>
+					<td>80</td>
+					<td><img src="/_avatars/minotar.net/trollolol8/16.png" /> <a href="/trollolol8"><span style="font-weight: ; color: gold">trollolol8</a></td>
+					<td>256</td>
+					<td>8</td>
+					<td>36</td>
+					<td>88</td>
+					<td>2.44</td>
+				</tr>
+				<tr>
+					<td>81</td>
+					<td><img src="/_avatars/minotar.net/night_hawk11/16.png" /> <a href="/night_hawk11"><span style="font-weight: ; color: ">night_hawk11</a></td>
+					<td>254</td>
+					<td>7</td>
+					<td>75</td>
+					<td>92</td>
+					<td>1.23</td>
+				</tr>
+				<tr>
+					<td>82</td>
+					<td><img src="/_avatars/minotar.net/karlspel/16.png" /> <a href="/karlspel"><span style="font-weight: ; color: ">karlspel</a></td>
+					<td>254</td>
+					<td>1</td>
+					<td>50</td>
+					<td>122</td>
+					<td>2.44</td>
+				</tr>
+				<tr>
+					<td>83</td>
+					<td><img src="/_avatars/minotar.net/YAHYA_M7MD/16.png" /> <a href="/YAHYA_M7MD"><span style="font-weight: ; color: ">YAHYA_M7MD</a></td>
+					<td>252</td>
+					<td>7</td>
+					<td>41</td>
+					<td>91</td>
+					<td>2.22</td>
+				</tr>
+				<tr>
+					<td>84</td>
+					<td><img src="/_avatars/minotar.net/Cheeky_Deco/16.png" /> <a href="/Cheeky_Deco"><span style="font-weight: ; color: ">Cheeky_Deco</a></td>
+					<td>250</td>
+					<td>7</td>
+					<td>26</td>
+					<td>90</td>
+					<td>3.46</td>
+				</tr>
+				<tr>
+					<td>85</td>
+					<td><img src="/_avatars/minotar.net/thunderstorm2361/16.png" /> <a href="/thunderstorm2361"><span style="font-weight: ; color: ">thunderstorm2361</a></td>
+					<td>248</td>
+					<td>10</td>
+					<td>127</td>
+					<td>74</td>
+					<td>0.58</td>
+				</tr>
+				<tr>
+					<td>86</td>
+					<td><img src="/_avatars/minotar.net/nutman3000/16.png" /> <a href="/nutman3000"><span style="font-weight: ; color: ">nutman3000</a></td>
+					<td>246</td>
+					<td>7</td>
+					<td>87</td>
+					<td>88</td>
+					<td>1.01</td>
+				</tr>
+				<tr>
+					<td>87</td>
+					<td><img src="/_avatars/minotar.net/n0valyfebest/16.png" /> <a href="/n0valyfebest"><span style="font-weight: ; color: ">n0valyfebest</a></td>
+					<td>246</td>
+					<td>10</td>
+					<td>21</td>
+					<td>73</td>
+					<td>3.48</td>
+				</tr>
+				<tr>
+					<td>88</td>
+					<td><img src="/_avatars/minotar.net/berendtable/16.png" /> <a href="/berendtable"><span style="font-weight: ; color: ">berendtable</a></td>
+					<td>244</td>
+					<td>6</td>
+					<td>35</td>
+					<td>92</td>
+					<td>2.63</td>
+				</tr>
+				<tr>
+					<td>89</td>
+					<td><img src="/_avatars/minotar.net/mitikostya/16.png" /> <a href="/mitikostya"><span style="font-weight: ; color: ">mitikostya</a></td>
+					<td>244</td>
+					<td>10</td>
+					<td>12</td>
+					<td>72</td>
+					<td>6.00</td>
+				</tr>
+				<tr>
+					<td>90</td>
+					<td><img src="/_avatars/minotar.net/Evildrow3/16.png" /> <a href="/Evildrow3"><span style="font-weight: ; color: ">Evildrow3</a></td>
+					<td>244</td>
+					<td>10</td>
+					<td>23</td>
+					<td>72</td>
+					<td>3.13</td>
+				</tr>
+				<tr>
+					<td>91</td>
+					<td><img src="/_avatars/minotar.net/veronson9/16.png" /> <a href="/veronson9"><span style="font-weight: ; color: ">veronson9</a></td>
+					<td>242</td>
+					<td>8</td>
+					<td>45</td>
+					<td>81</td>
+					<td>1.80</td>
+				</tr>
+				<tr>
+					<td>92</td>
+					<td><img src="/_avatars/minotar.net/xXmoshiheroXx/16.png" /> <a href="/xXmoshiheroXx"><span style="font-weight: ; color: green">xXmoshiheroXx</a></td>
+					<td>240</td>
+					<td>4</td>
+					<td>45</td>
+					<td>100</td>
+					<td>2.22</td>
+				</tr>
+				<tr>
+					<td>93</td>
+					<td><img src="/_avatars/minotar.net/WillsDarkness/16.png" /> <a href="/WillsDarkness"><span style="font-weight: ; color: ">WillsDarkness</a></td>
+					<td>240</td>
+					<td>11</td>
+					<td>20</td>
+					<td>65</td>
+					<td>3.25</td>
+				</tr>
+				<tr>
+					<td>94</td>
+					<td><img src="/_avatars/minotar.net/storm6839/16.png" /> <a href="/storm6839"><span style="font-weight: ; color: ">storm6839</a></td>
+					<td>240</td>
+					<td>6</td>
+					<td>62</td>
+					<td>90</td>
+					<td>1.45</td>
+				</tr>
+				<tr>
+					<td>95</td>
+					<td><img src="/_avatars/minotar.net/bodezilla/16.png" /> <a href="/bodezilla"><span style="font-weight: ; color: ">bodezilla</a></td>
+					<td>236</td>
+					<td>6</td>
+					<td>58</td>
+					<td>88</td>
+					<td>1.52</td>
+				</tr>
+				<tr>
+					<td>96</td>
+					<td><img src="/_avatars/minotar.net/paul9816/16.png" /> <a href="/paul9816"><span style="font-weight: ; color: ">paul9816</a></td>
+					<td>236</td>
+					<td>12</td>
+					<td>44</td>
+					<td>58</td>
+					<td>1.32</td>
+				</tr>
+				<tr>
+					<td>97</td>
+					<td><img src="/_avatars/minotar.net/kycrafft/16.png" /> <a href="/kycrafft"><span style="font-weight: ; color: ">kycrafft</a></td>
+					<td>234</td>
+					<td>3</td>
+					<td>18</td>
+					<td>102</td>
+					<td>5.67</td>
+				</tr>
+				<tr>
+					<td>98</td>
+					<td><img src="/_avatars/minotar.net/tiiki500/16.png" /> <a href="/tiiki500"><span style="font-weight: ; color: ">tiiki500</a></td>
+					<td>232</td>
+					<td>6</td>
+					<td>55</td>
+					<td>86</td>
+					<td>1.56</td>
+				</tr>
+				<tr>
+					<td>99</td>
+					<td><img src="/_avatars/minotar.net/andrewxxcccvv/16.png" /> <a href="/andrewxxcccvv"><span style="font-weight: ; color: ">andrewxxcccvv</a></td>
+					<td>232</td>
+					<td>9</td>
+					<td>26</td>
+					<td>71</td>
+					<td>2.73</td>
+				</tr>
+				<tr>
+					<td>100</td>
+					<td><img src="/_avatars/minotar.net/Nisonianx/16.png" /> <a href="/Nisonianx"><span style="font-weight: ; color: ">Nisonianx</a></td>
+					<td>232</td>
+					<td>9</td>
+					<td>36</td>
+					<td>71</td>
+					<td>1.97</td>
+				</tr>
+			</table>
+		</div>
+		<div class="tab-pane" id="tab-top">
+			<h3>Top 100 Players</h3>
+			<table class="table table-sort">
+				<thead>
+					<th>#</th>
+					<th>Username</th>
+					<th class="tip sorting_1" title="Wins x 10 + Kills">Points</th>
+					<th>Wins</th>
+					<th>Deaths</th>
+					<th>Kills</th>
+					<th>K/D</th>
+				</thead>
+				<tr>
+					<td>1</td>
+					<td><img src="/_avatars/minotar.net/Sezsor/16.png" /> <a href="/Sezsor"><span style="font-weight: ; color: ">Sezsor</a></td>
+					<td>13030</td>
+					<td>507</td>
+					<td>965</td>
+					<td>3980</td>
+					<td>4.12</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td><img src="/_avatars/minotar.net/Zieno12345/16.png" /> <a data-mz-missing href="/Zieno12345"><span style="font-weight: ; color: ">Zieno12345</a></td>
+					<td>11900</td>
+					<td>406</td>
+					<td>1042</td>
+					<td>3920</td>
+					<td>3.76</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td><img src="https://minotar.net/helm/The_Detonator_/16.png" /> <a data-mz-missing href="/The_Detonator_"><span style="font-weight: ; color: red">The_Detonator_</a></td>
+					<td>8940</td>
+					<td>433</td>
+					<td>1164</td>
+					<td>2305</td>
+					<td>1.98</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td><img src="/_avatars/minotar.net/SmileyFrown/16.png" /> <a href="/SmileyFrown"><span style="font-weight: ; color: ">SmileyFrown</a></td>
+					<td>8930</td>
+					<td>318</td>
+					<td>1401</td>
+					<td>2875</td>
+					<td>2.05</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td><img src="/_avatars/minotar.net/Blackhawk6alpha/16.png" /> <a href="/Blackhawk6alpha"><span style="font-weight: bold; color: red">Blackhawk6alpha</a></td>
+					<td>8572</td>
+					<td>370</td>
+					<td>868</td>
+					<td>2436</td>
+					<td>2.81</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td><img src="/_avatars/minotar.net/mrmarksman55/16.png" /> <a data-mz-missing href="/mrmarksman55"><span style="font-weight: ; color: blue">mrmarksman55</a></td>
+					<td>7690</td>
+					<td>317</td>
+					<td>1091</td>
+					<td>2260</td>
+					<td>2.07</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td><img src="/_avatars/minotar.net/chris_er_kul/16.png" /> <a href="/chris_er_kul"><span style="font-weight: ; color: ">chris_er_kul</a></td>
+					<td>7476</td>
+					<td>290</td>
+					<td>1476</td>
+					<td>2288</td>
+					<td>1.55</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td><img src="/_avatars/minotar.net/denisonok/16.png" /> <a href="/denisonok"><span style="font-weight: ; color: ">denisonok</a></td>
+					<td>7420</td>
+					<td>246</td>
+					<td>479</td>
+					<td>2480</td>
+					<td>5.18</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td><img src="/_avatars/minotar.net/SirJames101/16.png" /> <a href="/SirJames101"><span style="font-weight: ; color: ">SirJames101</a></td>
+					<td>7374</td>
+					<td>285</td>
+					<td>783</td>
+					<td>2262</td>
+					<td>2.89</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td><img src="/_avatars/minotar.net/bojankas/16.png" /> <a href="/bojankas"><span style="font-weight: ; color: ">bojankas</a></td>
+					<td>7170</td>
+					<td>317</td>
+					<td>785</td>
+					<td>2000</td>
+					<td>2.55</td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td><img src="/_avatars/minotar.net/ELK777/16.png" /> <a href="/ELK777"><span style="font-weight: ; color: ">ELK777</a></td>
+					<td>6054</td>
+					<td>376</td>
+					<td>431</td>
+					<td>1147</td>
+					<td>2.66</td>
+				</tr>
+				<tr>
+					<td>12</td>
+					<td><img src="/_avatars/minotar.net/Exurant/16.png" /> <a href="/Exurant"><span style="font-weight: ; color: ">Exurant</a></td>
+					<td>6000</td>
+					<td>162</td>
+					<td>419</td>
+					<td>2190</td>
+					<td>5.23</td>
+				</tr>
+				<tr>
+					<td>13</td>
+					<td><img src="/_avatars/minotar.net/Mattmansmine/16.png" /> <a href="/Mattmansmine"><span style="font-weight: ; color: ">Mattmansmine</a></td>
+					<td>6000</td>
+					<td>302</td>
+					<td>403</td>
+					<td>1490</td>
+					<td>3.70</td>
+				</tr>
+				<tr>
+					<td>14</td>
+					<td><img src="/_avatars/minotar.net/ckaplan/16.png" /> <a href="/ckaplan"><span style="font-weight: ; color: ">ckaplan</a></td>
+					<td>5922</td>
+					<td>247</td>
+					<td>1029</td>
+					<td>1726</td>
+					<td>1.68</td>
+				</tr>
+				<tr>
+					<td>15</td>
+					<td><img src="/_avatars/minotar.net/PedroJiboiaBr/16.png" /> <a href="/PedroJiboiaBr"><span style="font-weight: ; color: ">PedroJiboiaBr</a></td>
+					<td>5714</td>
+					<td>258</td>
+					<td>942</td>
+					<td>1567</td>
+					<td>1.66</td>
+				</tr>
+				<tr>
+					<td>16</td>
+					<td><img src="/_avatars/minotar.net/Hex_Agony/16.png" /> <a href="/Hex_Agony"><span style="font-weight: ; color: ">Hex_Agony</a></td>
+					<td>5278</td>
+					<td>160</td>
+					<td>588</td>
+					<td>1839</td>
+					<td>3.13</td>
+				</tr>
+				<tr>
+					<td>17</td>
+					<td><img src="/_avatars/minotar.net/TheBlackTax/16.png" /> <a href="/TheBlackTax"><span style="font-weight: ; color: ">TheBlackTax</a></td>
+					<td>5122</td>
+					<td>265</td>
+					<td>723</td>
+					<td>1236</td>
+					<td>1.71</td>
+				</tr>
+				<tr>
+					<td>18</td>
+					<td><img src="/_avatars/minotar.net/CocoaLatteSauce/16.png" /> <a href="/CocoaLatteSauce"><span style="font-weight: ; color: red">CocoaLatteSauce</a></td>
+					<td>4980</td>
+					<td>250</td>
+					<td>1102</td>
+					<td>1240</td>
+					<td>1.13</td>
+				</tr>
+				<tr>
+					<td>19</td>
+					<td><img src="/_avatars/minotar.net/obscurehero/16.png" /> <a href="/obscurehero"><span style="font-weight: ; color: ">obscurehero</a></td>
+					<td>4860</td>
+					<td>216</td>
+					<td>187</td>
+					<td>1350</td>
+					<td>7.22</td>
+				</tr>
+				<tr>
+					<td>20</td>
+					<td><img src="/_avatars/minotar.net/Nils1124/16.png" /> <a href="/Nils1124"><span style="font-weight: bold; color: red">Nils1124</a></td>
+					<td>4648</td>
+					<td>153</td>
+					<td>415</td>
+					<td>1559</td>
+					<td>3.76</td>
+				</tr>
+				<tr>
+					<td>21</td>
+					<td><img src="/_avatars/minotar.net/gamefreak0000/16.png" /> <a href="/gamefreak0000"><span style="font-weight: ; color: ">gamefreak0000</a></td>
+					<td>4634</td>
+					<td>215</td>
+					<td>317</td>
+					<td>1242</td>
+					<td>3.92</td>
+				</tr>
+				<tr>
+					<td>22</td>
+					<td><img src="/_avatars/minotar.net/balulakids/16.png" /> <a href="/balulakids"><span style="font-weight: ; color: ">balulakids</a></td>
+					<td>4420</td>
+					<td>242</td>
+					<td>810</td>
+					<td>1000</td>
+					<td>1.23</td>
+				</tr>
+				<tr>
+					<td>23</td>
+					<td><img src="/_avatars/minotar.net/EnVyAngelo/16.png" /> <a href="/EnVyAngelo"><span style="font-weight: ; color: ">EnVyAngelo</a></td>
+					<td>4296</td>
+					<td>142</td>
+					<td>304</td>
+					<td>1438</td>
+					<td>4.73</td>
+				</tr>
+				<tr>
+					<td>24</td>
+					<td><img src="/_avatars/minotar.net/png20/16.png" /> <a href="/png20"><span style="font-weight: ; color: ">png20</a></td>
+					<td>4292</td>
+					<td>106</td>
+					<td>412</td>
+					<td>1616</td>
+					<td>3.92</td>
+				</tr>
+				<tr>
+					<td>25</td>
+					<td><img src="/_avatars/minotar.net/1000ten2/16.png" /> <a href="/1000ten2"><span style="font-weight: ; color: ">1000ten2</a></td>
+					<td>4240</td>
+					<td>188</td>
+					<td>653</td>
+					<td>1180</td>
+					<td>1.81</td>
+				</tr>
+				<tr>
+					<td>26</td>
+					<td><img src="/_avatars/minotar.net/SWEDISHGUY12/16.png" /> <a href="/SWEDISHGUY12"><span style="font-weight: ; color: ">SWEDISHGUY12</a></td>
+					<td>3998</td>
+					<td>159</td>
+					<td>1063</td>
+					<td>1204</td>
+					<td>1.13</td>
+				</tr>
+				<tr>
+					<td>27</td>
+					<td><img src="/_avatars/minotar.net/froggeyman/16.png" /> <a href="/froggeyman"><span style="font-weight: ; color: ">froggeyman</a></td>
+					<td>3990</td>
+					<td>177</td>
+					<td>406</td>
+					<td>1110</td>
+					<td>2.73</td>
+				</tr>
+				<tr>
+					<td>28</td>
+					<td><img src="/_avatars/minotar.net/arcassasin/16.png" /> <a href="/arcassasin"><span style="font-weight: ; color: ">arcassasin</a></td>
+					<td>3852</td>
+					<td>261</td>
+					<td>365</td>
+					<td>621</td>
+					<td>1.70</td>
+				</tr>
+				<tr>
+					<td>29</td>
+					<td><img src="/_avatars/minotar.net/Hakito007/16.png" /> <a href="/Hakito007"><span style="font-weight: ; color: ">Hakito007</a></td>
+					<td>3748</td>
+					<td>174</td>
+					<td>197</td>
+					<td>1004</td>
+					<td>5.10</td>
+				</tr>
+				<tr>
+					<td>30</td>
+					<td><img src="/_avatars/minotar.net/Microasterix/16.png" /> <a href="/Microasterix"><span style="font-weight: ; color: ">Microasterix</a></td>
+					<td>3740</td>
+					<td>91</td>
+					<td>709</td>
+					<td>1415</td>
+					<td>2.00</td>
+				</tr>
+				<tr>
+					<td>31</td>
+					<td><img src="/_avatars/minotar.net/cdude8/16.png" /> <a href="/cdude8"><span style="font-weight: ; color: ">cdude8</a></td>
+					<td>3668</td>
+					<td>155</td>
+					<td>276</td>
+					<td>1059</td>
+					<td>3.84</td>
+				</tr>
+				<tr>
+					<td>32</td>
+					<td><img src="/_avatars/minotar.net/jax3star/16.png" /> <a href="/jax3star"><span style="font-weight: ; color: ">jax3star</a></td>
+					<td>3592</td>
+					<td>236</td>
+					<td>736</td>
+					<td>616</td>
+					<td>0.84</td>
+				</tr>
+				<tr>
+					<td>33</td>
+					<td><img src="/_avatars/minotar.net/BrandotheMando/16.png" /> <a href="/BrandotheMando"><span style="font-weight: ; color: ">BrandotheMando</a></td>
+					<td>3588</td>
+					<td>155</td>
+					<td>549</td>
+					<td>1019</td>
+					<td>1.86</td>
+				</tr>
+				<tr>
+					<td>34</td>
+					<td><img src="/_avatars/minotar.net/Hughsie1/16.png" /> <a href="/Hughsie1"><span style="font-weight: ; color: red">Hughsie1</a></td>
+					<td>3580</td>
+					<td>207</td>
+					<td>493</td>
+					<td>755</td>
+					<td>1.53</td>
+				</tr>
+				<tr>
+					<td>35</td>
+					<td><img src="/_avatars/minotar.net/Tophu/16.png" /> <a href="/Tophu"><span style="font-weight: ; color: ">Tophu</a></td>
+					<td>3520</td>
+					<td>109</td>
+					<td>520</td>
+					<td>1215</td>
+					<td>2.34</td>
+				</tr>
+				<tr>
+					<td>36</td>
+					<td><img src="/_avatars/minotar.net/speaker_24/16.png" /> <a href="/speaker_24"><span style="font-weight: ; color: ">speaker_24</a></td>
+					<td>3458</td>
+					<td>99</td>
+					<td>506</td>
+					<td>1234</td>
+					<td>2.44</td>
+				</tr>
+				<tr>
+					<td>37</td>
+					<td><img src="/_avatars/minotar.net/krisdenkule8/16.png" /> <a href="/krisdenkule8"><span style="font-weight: ; color: ">krisdenkule8</a></td>
+					<td>3454</td>
+					<td>182</td>
+					<td>1497</td>
+					<td>817</td>
+					<td>0.55</td>
+				</tr>
+				<tr>
+					<td>38</td>
+					<td><img src="/_avatars/minotar.net/ShorttKid/16.png" /> <a href="/ShorttKid"><span style="font-weight: ; color: ">ShorttKid</a></td>
+					<td>3448</td>
+					<td>180</td>
+					<td>187</td>
+					<td>824</td>
+					<td>4.41</td>
+				</tr>
+				<tr>
+					<td>39</td>
+					<td><img src="https://minotar.net/helm/drewsdaman7/16.png" /> <a href="/drewsdaman7"><span style="font-weight: ; color: ">drewsdaman7</a></td>
+					<td>3402</td>
+					<td>156</td>
+					<td>433</td>
+					<td>921</td>
+					<td>2.13</td>
+				</tr>
+				<tr>
+					<td>40</td>
+					<td><img src="/_avatars/minotar.net/Niki001/16.png" /> <a href="/Niki001"><span style="font-weight: ; color: ">Niki001</a></td>
+					<td>3396</td>
+					<td>177</td>
+					<td>341</td>
+					<td>813</td>
+					<td>2.38</td>
+				</tr>
+				<tr>
+					<td>41</td>
+					<td><img src="https://minotar.net/helm/EMILEXisXawsome/16.png" /> <a href="/EMILEXisXawsome"><span style="font-weight: ; color: ">EMILEXisXawsome</a></td>
+					<td>3388</td>
+					<td>141</td>
+					<td>378</td>
+					<td>989</td>
+					<td>2.62</td>
+				</tr>
+				<tr>
+					<td>42</td>
+					<td><img src="/_avatars/minotar.net/JMD33/16.png" /> <a href="/JMD33"><span style="font-weight: ; color: ">JMD33</a></td>
+					<td>3330</td>
+					<td>302</td>
+					<td>953</td>
+					<td>155</td>
+					<td>0.16</td>
+				</tr>
+				<tr>
+					<td>43</td>
+					<td><img src="/_avatars/minotar.net/Robobains24/16.png" /> <a href="/Robobains24"><span style="font-weight: ; color: ">Robobains24</a></td>
+					<td>3328</td>
+					<td>141</td>
+					<td>293</td>
+					<td>959</td>
+					<td>3.27</td>
+				</tr>
+				<tr>
+					<td>44</td>
+					<td><img src="/_avatars/minotar.net/empa01/16.png" /> <a href="/empa01"><span style="font-weight: ; color: ">empa01</a></td>
+					<td>3308</td>
+					<td>182</td>
+					<td>791</td>
+					<td>744</td>
+					<td>0.94</td>
+				</tr>
+				<tr>
+					<td>45</td>
+					<td><img src="/_avatars/minotar.net/yub_yubby12/16.png" /> <a href="/yub_yubby12"><span style="font-weight: ; color: ">yub_yubby12</a></td>
+					<td>3258</td>
+					<td>228</td>
+					<td>558</td>
+					<td>489</td>
+					<td>0.88</td>
+				</tr>
+				<tr>
+					<td>46</td>
+					<td><img src="/_avatars/minotar.net/waulrus/16.png" /> <a href="/waulrus"><span style="font-weight: ; color: ">waulrus</a></td>
+					<td>3236</td>
+					<td>82</td>
+					<td>753</td>
+					<td>1208</td>
+					<td>1.60</td>
+				</tr>
+				<tr>
+					<td>47</td>
+					<td><img src="/_avatars/minotar.net/Brotherton77/16.png" /> <a href="/Brotherton77"><span style="font-weight: ; color: ">Brotherton77</a></td>
+					<td>3204</td>
+					<td>136</td>
+					<td>760</td>
+					<td>922</td>
+					<td>1.21</td>
+				</tr>
+				<tr>
+					<td>48</td>
+					<td><img src="/_avatars/minotar.net/sloopdog/16.png" /> <a href="/sloopdog"><span style="font-weight: ; color: ">sloopdog</a></td>
+					<td>3196</td>
+					<td>105</td>
+					<td>432</td>
+					<td>1073</td>
+					<td>2.48</td>
+				</tr>
+				<tr>
+					<td>49</td>
+					<td><img src="/_avatars/minotar.net/Crazy_Iban/16.png" /> <a href="/Crazy_Iban"><span style="font-weight: ; color: ">Crazy_Iban</a></td>
+					<td>3186</td>
+					<td>113</td>
+					<td>355</td>
+					<td>1028</td>
+					<td>2.90</td>
+				</tr>
+				<tr>
+					<td>50</td>
+					<td><img src="/_avatars/minotar.net/Scherfsekkel/16.png" /> <a href="/Scherfsekkel"><span style="font-weight: ; color: ">Scherfsekkel</a></td>
+					<td>3150</td>
+					<td>218</td>
+					<td>672</td>
+					<td>485</td>
+					<td>0.72</td>
+				</tr>
+				<tr>
+					<td>51</td>
+					<td><img src="/_avatars/minotar.net/Shirokamii/16.png" /> <a href="/Shirokamii"><span style="font-weight: bold; color: red">Shirokamii</a></td>
+					<td>3148</td>
+					<td>119</td>
+					<td>184</td>
+					<td>979</td>
+					<td>5.32</td>
+				</tr>
+				<tr>
+					<td>52</td>
+					<td><img src="/_avatars/minotar.net/TwinkyAllMight/16.png" /> <a href="/TwinkyAllMight"><span style="font-weight: ; color: ">TwinkyAllMight</a></td>
+					<td>3136</td>
+					<td>128</td>
+					<td>253</td>
+					<td>928</td>
+					<td>3.67</td>
+				</tr>
+				<tr>
+					<td>53</td>
+					<td><img src="/_avatars/minotar.net/RedKid2011/16.png" /> <a href="/RedKid2011"><span style="font-weight: ; color: ">RedKid2011</a></td>
+					<td>3082</td>
+					<td>153</td>
+					<td>490</td>
+					<td>776</td>
+					<td>1.58</td>
+				</tr>
+				<tr>
+					<td>54</td>
+					<td><img src="/_avatars/minotar.net/Love_Dora/16.png" /> <a href="/Love_Dora"><span style="font-weight: ; color: ">Love_Dora</a></td>
+					<td>3068</td>
+					<td>146</td>
+					<td>1106</td>
+					<td>804</td>
+					<td>0.73</td>
+				</tr>
+				<tr>
+					<td>55</td>
+					<td><img src="/_avatars/minotar.net/Thomas6767/16.png" /> <a href="/Thomas6767"><span style="font-weight: ; color: ">Thomas6767</a></td>
+					<td>3034</td>
+					<td>173</td>
+					<td>372</td>
+					<td>652</td>
+					<td>1.75</td>
+				</tr>
+				<tr>
+					<td>56</td>
+					<td><img src="/_avatars/minotar.net/nico9321/16.png" /> <a href="/nico9321"><span style="font-weight: ; color: ">nico9321</a></td>
+					<td>3024</td>
+					<td>134</td>
+					<td>461</td>
+					<td>842</td>
+					<td>1.83</td>
+				</tr>
+				<tr>
+					<td>57</td>
+					<td><img src="/_avatars/minotar.net/nobutsaboutit/16.png" /> <a href="/nobutsaboutit"><span style="font-weight: ; color: ">nobutsaboutit</a></td>
+					<td>2944</td>
+					<td>82</td>
+					<td>512</td>
+					<td>1062</td>
+					<td>2.07</td>
+				</tr>
+				<tr>
+					<td>58</td>
+					<td><img src="https://minotar.net/helm/Bubbyischubby/16.png" /> <a href="/Bubbyischubby"><span style="font-weight: ; color: ">Bubbyischubby</a></td>
+					<td>2922</td>
+					<td>152</td>
+					<td>525</td>
+					<td>701</td>
+					<td>1.34</td>
+				</tr>
+				<tr>
+					<td>59</td>
+					<td><img src="/_avatars/minotar.net/SkyRod/16.png" /> <a href="/SkyRod"><span style="font-weight: ; color: ">SkyRod</a></td>
+					<td>2920</td>
+					<td>112</td>
+					<td>293</td>
+					<td>900</td>
+					<td>3.07</td>
+				</tr>
+				<tr>
+					<td>60</td>
+					<td><img src="https://minotar.net/helm/ldrago103/16.png" /> <a href="/ldrago103"><span style="font-weight: ; color: ">ldrago103</a></td>
+					<td>2920</td>
+					<td>129</td>
+					<td>713</td>
+					<td>815</td>
+					<td>1.14</td>
+				</tr>
+				<tr>
+					<td>61</td>
+					<td><img src="https://minotar.net/helm/BoilerFan2000/16.png" /> <a href="/BoilerFan2000"><span style="font-weight: ; color: ">BoilerFan2000</a></td>
+					<td>2914</td>
+					<td>135</td>
+					<td>422</td>
+					<td>782</td>
+					<td>1.85</td>
+				</tr>
+				<tr>
+					<td>62</td>
+					<td><img src="/_avatars/minotar.net/tijme1411/16.png" /> <a data-mz-missing href="/tijme1411"><span style="font-weight: ; color: ">tijme1411</a></td>
+					<td>2898</td>
+					<td>143</td>
+					<td>273</td>
+					<td>734</td>
+					<td>2.69</td>
+				</tr>
+				<tr>
+					<td>63</td>
+					<td><img src="/_avatars/minotar.net/mattyman233/16.png" /> <a href="/mattyman233"><span style="font-weight: ; color: ">mattyman233</a></td>
+					<td>2884</td>
+					<td>190</td>
+					<td>431</td>
+					<td>492</td>
+					<td>1.14</td>
+				</tr>
+				<tr>
+					<td>64</td>
+					<td><img src="https://minotar.net/helm/Archer_111/16.png" /> <a href="/Archer_111"><span style="font-weight: ; color: ">Archer_111</a></td>
+					<td>2850</td>
+					<td>142</td>
+					<td>205</td>
+					<td>715</td>
+					<td>3.49</td>
+				</tr>
+				<tr>
+					<td>65</td>
+					<td><img src="/_avatars/minotar.net/andee88/16.png" /> <a href="/andee88"><span style="font-weight: ; color: ">andee88</a></td>
+					<td>2848</td>
+					<td>134</td>
+					<td>761</td>
+					<td>754</td>
+					<td>0.99</td>
+				</tr>
+				<tr>
+					<td>66</td>
+					<td><img src="/_avatars/minotar.net/EmilyRG/16.png" /> <a href="/EmilyRG"><span style="font-weight: ; color: ">EmilyRG</a></td>
+					<td>2846</td>
+					<td>192</td>
+					<td>489</td>
+					<td>463</td>
+					<td>0.95</td>
+				</tr>
+				<tr>
+					<td>67</td>
+					<td><img src="/_avatars/minotar.net/enderhugh/16.png" /> <a href="/enderhugh"><span style="font-weight: ; color: ">enderhugh</a></td>
+					<td>2804</td>
+					<td>126</td>
+					<td>275</td>
+					<td>772</td>
+					<td>2.81</td>
+				</tr>
+				<tr>
+					<td>68</td>
+					<td><img src="/_avatars/minotar.net/trtld/16.png" /> <a href="/trtld"><span style="font-weight: ; color: ">trtld</a></td>
+					<td>2792</td>
+					<td>147</td>
+					<td>497</td>
+					<td>661</td>
+					<td>1.33</td>
+				</tr>
+				<tr>
+					<td>69</td>
+					<td><img src="/_avatars/minotar.net/44Alex99/16.png" /> <a href="/44Alex99"><span style="font-weight: ; color: ">44Alex99</a></td>
+					<td>2754</td>
+					<td>75</td>
+					<td>623</td>
+					<td>1002</td>
+					<td>1.61</td>
+				</tr>
+				<tr>
+					<td>70</td>
+					<td><img src="/_avatars/minotar.net/Drapion1002/16.png" /> <a href="/Drapion1002"><span style="font-weight: ; color: ">Drapion1002</a></td>
+					<td>2738</td>
+					<td>150</td>
+					<td>702</td>
+					<td>619</td>
+					<td>0.88</td>
+				</tr>
+				<tr>
+					<td>71</td>
+					<td><img src="/_avatars/minotar.net/Zarmax5/16.png" /> <a href="/Zarmax5"><span style="font-weight: ; color: ">Zarmax5</a></td>
+					<td>2732</td>
+					<td>92</td>
+					<td>700</td>
+					<td>906</td>
+					<td>1.29</td>
+				</tr>
+				<tr>
+					<td>72</td>
+					<td><img src="/_avatars/minotar.net/ejwalk/16.png" /> <a href="/ejwalk"><span style="font-weight: ; color: ">ejwalk</a></td>
+					<td>2732</td>
+					<td>150</td>
+					<td>573</td>
+					<td>616</td>
+					<td>1.08</td>
+				</tr>
+				<tr>
+					<td>73</td>
+					<td><img src="/_avatars/minotar.net/mr_goodenough/16.png" /> <a href="/mr_goodenough"><span style="font-weight: ; color: ">mr_goodenough</a></td>
+					<td>2708</td>
+					<td>121</td>
+					<td>151</td>
+					<td>749</td>
+					<td>4.96</td>
+				</tr>
+				<tr>
+					<td>74</td>
+					<td><img src="https://minotar.net/helm/sparkysam7/16.png" /> <a href="/sparkysam7"><span style="font-weight: ; color: ">sparkysam7</a></td>
+					<td>2700</td>
+					<td>132</td>
+					<td>443</td>
+					<td>690</td>
+					<td>1.56</td>
+				</tr>
+				<tr>
+					<td>75</td>
+					<td><img src="/_avatars/minotar.net/SQUIRGGLES/16.png" /> <a href="/SQUIRGGLES"><span style="font-weight: ; color: ">SQUIRGGLES</a></td>
+					<td>2690</td>
+					<td>108</td>
+					<td>495</td>
+					<td>805</td>
+					<td>1.63</td>
+				</tr>
+				<tr>
+					<td>76</td>
+					<td><img src="https://minotar.net/helm/piman73/16.png" /> <a href="/piman73"><span style="font-weight: ; color: ">piman73</a></td>
+					<td>2676</td>
+					<td>140</td>
+					<td>276</td>
+					<td>638</td>
+					<td>2.31</td>
+				</tr>
+				<tr>
+					<td>77</td>
+					<td><img src="/_avatars/minotar.net/javiercampos1998/16.png" /> <a href="/javiercampos1998"><span style="font-weight: ; color: ">javiercampos1998</a></td>
+					<td>2672</td>
+					<td>108</td>
+					<td>135</td>
+					<td>796</td>
+					<td>5.90</td>
+				</tr>
+				<tr>
+					<td>78</td>
+					<td><img src="/_avatars/minotar.net/chrisnguyen1230/16.png" /> <a href="/chrisnguyen1230"><span style="font-weight: ; color: ">chrisnguyen1230</a></td>
+					<td>2666</td>
+					<td>141</td>
+					<td>455</td>
+					<td>628</td>
+					<td>1.38</td>
+				</tr>
+				<tr>
+					<td>79</td>
+					<td><img src="/_avatars/minotar.net/TheFrigg/16.png" /> <a href="/TheFrigg"><span style="font-weight: ; color: ">TheFrigg</a></td>
+					<td>2644</td>
+					<td>160</td>
+					<td>380</td>
+					<td>522</td>
+					<td>1.37</td>
+				</tr>
+				<tr>
+					<td>80</td>
+					<td><img src="/_avatars/minotar.net/jpkoebbe/16.png" /> <a href="/jpkoebbe"><span style="font-weight: ; color: ">jpkoebbe</a></td>
+					<td>2642</td>
+					<td>165</td>
+					<td>854</td>
+					<td>496</td>
+					<td>0.58</td>
+				</tr>
+				<tr>
+					<td>81</td>
+					<td><img src="/_avatars/minotar.net/Duulicious/16.png" /> <a href="/Duulicious"><span style="font-weight: ; color: ">Duulicious</a></td>
+					<td>2628</td>
+					<td>95</td>
+					<td>452</td>
+					<td>839</td>
+					<td>1.86</td>
+				</tr>
+				<tr>
+					<td>82</td>
+					<td><img src="/_avatars/minotar.net/EPICmonkey43/16.png" /> <a href="/EPICmonkey43"><span style="font-weight: ; color: ">EPICmonkey43</a></td>
+					<td>2612</td>
+					<td>120</td>
+					<td>232</td>
+					<td>706</td>
+					<td>3.04</td>
+				</tr>
+				<tr>
+					<td>83</td>
+					<td><img src="/_avatars/minotar.net/ajt5316/16.png" /> <a href="/ajt5316"><span style="font-weight: ; color: ">ajt5316</a></td>
+					<td>2602</td>
+					<td>140</td>
+					<td>779</td>
+					<td>601</td>
+					<td>0.77</td>
+				</tr>
+				<tr>
+					<td>84</td>
+					<td><img src="/_avatars/minotar.net/coolcubone/16.png" /> <a href="/coolcubone"><span style="font-weight: ; color: ">coolcubone</a></td>
+					<td>2572</td>
+					<td>157</td>
+					<td>759</td>
+					<td>501</td>
+					<td>0.66</td>
+				</tr>
+				<tr>
+					<td>85</td>
+					<td><img src="/_avatars/minotar.net/XxXxDragoxXxX/16.png" /> <a href="/XxXxDragoxXxX"><span style="font-weight: ; color: ">XxXxDragoxXxX</a></td>
+					<td>2560</td>
+					<td>126</td>
+					<td>373</td>
+					<td>650</td>
+					<td>1.74</td>
+				</tr>
+				<tr>
+					<td>86</td>
+					<td><img src="/_avatars/minotar.net/abbadihouda/16.png" /> <a href="/abbadihouda"><span style="font-weight: ; color: ">abbadihouda</a></td>
+					<td>2560</td>
+					<td>83</td>
+					<td>676</td>
+					<td>865</td>
+					<td>1.28</td>
+				</tr>
+				<tr>
+					<td>87</td>
+					<td><img src="/_avatars/minotar.net/chocodh/16.png" /> <a href="/chocodh"><span style="font-weight: ; color: ">chocodh</a></td>
+					<td>2540</td>
+					<td>163</td>
+					<td>692</td>
+					<td>455</td>
+					<td>0.66</td>
+				</tr>
+				<tr>
+					<td>88</td>
+					<td><img src="/_avatars/minotar.net/Nic0ola5/16.png" /> <a href="/Nic0ola5"><span style="font-weight: ; color: ">Nic0ola5</a></td>
+					<td>2540</td>
+					<td>118</td>
+					<td>559</td>
+					<td>680</td>
+					<td>1.22</td>
+				</tr>
+				<tr>
+					<td>89</td>
+					<td><img src="/_avatars/minotar.net/DHarv/16.png" /> <a href="/DHarv"><span style="font-weight: ; color: ">DHarv</a></td>
+					<td>2530</td>
+					<td>72</td>
+					<td>929</td>
+					<td>905</td>
+					<td>0.97</td>
+				</tr>
+				<tr>
+					<td>90</td>
+					<td><img src="/_avatars/minotar.net/coldplay_rocks/16.png" /> <a href="/coldplay_rocks"><span style="font-weight: ; color: ">coldplay_rocks</a></td>
+					<td>2526</td>
+					<td>137</td>
+					<td>420</td>
+					<td>578</td>
+					<td>1.38</td>
+				</tr>
+				<tr>
+					<td>91</td>
+					<td><img src="/_avatars/minotar.net/bfortbattle/16.png" /> <a href="/bfortbattle"><span style="font-weight: ; color: ">bfortbattle</a></td>
+					<td>2522</td>
+					<td>125</td>
+					<td>172</td>
+					<td>636</td>
+					<td>3.70</td>
+				</tr>
+				<tr>
+					<td>92</td>
+					<td><img src="/_avatars/minotar.net/alfredoscar123/16.png" /> <a href="/alfredoscar123"><span style="font-weight: ; color: ">alfredoscar123</a></td>
+					<td>2500</td>
+					<td>188</td>
+					<td>632</td>
+					<td>310</td>
+					<td>0.49</td>
+				</tr>
+				<tr>
+					<td>93</td>
+					<td><img src="/_avatars/minotar.net/matthewgolez/16.png" /> <a href="/matthewgolez"><span style="font-weight: ; color: ">matthewgolez</a></td>
+					<td>2490</td>
+					<td>121</td>
+					<td>523</td>
+					<td>640</td>
+					<td>1.22</td>
+				</tr>
+				<tr>
+					<td>94</td>
+					<td><img src="https://minotar.net/helm/mrmcbob8/16.png" /> <a href="/mrmcbob8"><span style="font-weight: ; color: ">mrmcbob8</a></td>
+					<td>2458</td>
+					<td>135</td>
+					<td>299</td>
+					<td>554</td>
+					<td>1.85</td>
+				</tr>
+				<tr>
+					<td>95</td>
+					<td><img src="/_avatars/minotar.net/JamesC424/16.png" /> <a href="/JamesC424"><span style="font-weight: ; color: ">JamesC424</a></td>
+					<td>2450</td>
+					<td>147</td>
+					<td>627</td>
+					<td>490</td>
+					<td>0.78</td>
+				</tr>
+				<tr>
+					<td>96</td>
+					<td><img src="/_avatars/minotar.net/James12112004/16.png" /> <a href="/James12112004"><span style="font-weight: ; color: ">James12112004</a></td>
+					<td>2428</td>
+					<td>164</td>
+					<td>552</td>
+					<td>394</td>
+					<td>0.71</td>
+				</tr>
+				<tr>
+					<td>97</td>
+					<td><img src="/_avatars/minotar.net/Alpakaparo/16.png" /> <a href="/Alpakaparo"><span style="font-weight: ; color: ">Alpakaparo</a></td>
+					<td>2410</td>
+					<td>83</td>
+					<td>195</td>
+					<td>790</td>
+					<td>4.05</td>
+				</tr>
+				<tr>
+					<td>98</td>
+					<td><img src="/_avatars/minotar.net/Schoolsoup/16.png" /> <a href="/Schoolsoup"><span style="font-weight: ; color: ">Schoolsoup</a></td>
+					<td>2384</td>
+					<td>69</td>
+					<td>236</td>
+					<td>847</td>
+					<td>3.59</td>
+				</tr>
+				<tr>
+					<td>99</td>
+					<td><img src="/_avatars/minotar.net/8GTylerG8/16.png" /> <a href="/8GTylerG8"><span style="font-weight: ; color: ">8GTylerG8</a></td>
+					<td>2382</td>
+					<td>121</td>
+					<td>486</td>
+					<td>586</td>
+					<td>1.21</td>
+				</tr>
+				<tr>
+					<td>100</td>
+					<td><img src="/_avatars/minotar.net/Elliottpwnsall/16.png" /> <a href="/Elliottpwnsall"><span style="font-weight: ; color: ">Elliottpwnsall</a></td>
+					<td>2350</td>
+					<td>93</td>
+					<td>201</td>
+					<td>710</td>
+					<td>3.53</td>
+				</tr>
+			</table>
+		</div>
+		<div class="tab-pane" id="tab-recent">
+			<h3>Recent Games <small>The last 50 games played on our servers</small></h3>
+			<div class="row-fluid">
+				<div class="span12">
+					<table class="table">
+						<thead>
+							<th>ID</th>
+							<th>Winner</th>
+							<th>Players</th>
+							<th>Start</th>
+							<th>End</th>
+							<th>Duration</th>
+						</thead>
+
+						<tr>
+							<td><a href="/skywars/205461">205461</a></td>
+							<td><span class="label label-red">RED</span></td>
+							<td>25</td>
+							<td>August 15, 2013 at 12:30 PM</td>
+							<td>August 15, 2013 at 12:35 PM</td>
+							<td>5 minutes, 19 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205459">205459</a></td>
+							<td><span class="label label-green">GREEN</span></td>
+							<td>24</td>
+							<td>August 15, 2013 at 12:26 PM</td>
+							<td>August 15, 2013 at 12:34 PM</td>
+							<td>7 minutes, 49 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205458">205458</a></td>
+							<td><span class="label label-red">RED</span></td>
+							<td>4</td>
+							<td>August 15, 2013 at 12:26 PM</td>
+							<td>August 15, 2013 at 12:30 PM</td>
+							<td>3 minutes, 42 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205456">205456</a></td>
+							<td><span class="label label-red">RED</span></td>
+							<td>21</td>
+							<td>August 15, 2013 at 12:24 PM</td>
+							<td>August 15, 2013 at 12:29 PM</td>
+							<td>4 minutes, 28 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205455">205455</a></td>
+							<td><span class="label label-blue">BLUE</span></td>
+							<td>7</td>
+							<td>August 15, 2013 at 12:24 PM</td>
+							<td>August 15, 2013 at 12:29 PM</td>
+							<td>5 minutes, 18 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205454">205454</a></td>
+							<td><span class="label label-green">GREEN</span></td>
+							<td>30</td>
+							<td>August 15, 2013 at 12:23 PM</td>
+							<td>August 15, 2013 at 12:30 PM</td>
+							<td>6 minutes, 42 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205453">205453</a></td>
+							<td><span class="label label-red">RED</span></td>
+							<td>25</td>
+							<td>August 15, 2013 at 12:21 PM</td>
+							<td>August 15, 2013 at 12:27 PM</td>
+							<td>6 minutes, 20 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205452">205452</a></td>
+							<td><span class="label label-green">GREEN</span></td>
+							<td>15</td>
+							<td>August 15, 2013 at 12:19 PM</td>
+							<td>August 15, 2013 at 12:28 PM</td>
+							<td>9 minutes, 35 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205451">205451</a></td>
+							<td><span class="label label-red">RED</span></td>
+							<td>7</td>
+							<td>August 15, 2013 at 12:17 PM</td>
+							<td>August 15, 2013 at 12:23 PM</td>
+							<td>6 minutes, 12 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205450">205450</a></td>
+							<td><span class="label label-green">GREEN</span></td>
+							<td>19</td>
+							<td>August 15, 2013 at 12:17 PM</td>
+							<td>August 15, 2013 at 12:24 PM</td>
+							<td>6 minutes, 46 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205449">205449</a></td>
+							<td><span class="label label-red">RED</span></td>
+							<td>10</td>
+							<td>August 15, 2013 at 12:17 PM</td>
+							<td>August 15, 2013 at 12:24 PM</td>
+							<td>7 minutes, 21 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205448">205448</a></td>
+							<td><span class="label label-red">RED</span></td>
+							<td>17</td>
+							<td>August 15, 2013 at 12:15 PM</td>
+							<td>August 15, 2013 at 12:19 PM</td>
+							<td>3 minutes, 25 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205447">205447</a></td>
+							<td><span class="label label-green">GREEN</span></td>
+							<td>24</td>
+							<td>August 15, 2013 at 12:14 PM</td>
+							<td>August 15, 2013 at 12:22 PM</td>
+							<td>7 minutes, 32 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205446">205446</a></td>
+							<td><span class="label label-blue">BLUE</span></td>
+							<td>7</td>
+							<td>August 15, 2013 at 12:14 PM</td>
+							<td>August 15, 2013 at 12:19 PM</td>
+							<td>5 minutes, 9 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205445">205445</a></td>
+							<td><span class="label label-blue">BLUE</span></td>
+							<td>19</td>
+							<td>August 15, 2013 at 12:13 PM</td>
+							<td>August 15, 2013 at 12:21 PM</td>
+							<td>7 minutes, 59 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205444">205444</a></td>
+							<td><span class="label label-red">RED</span></td>
+							<td>5</td>
+							<td>August 15, 2013 at 12:11 PM</td>
+							<td>August 15, 2013 at 12:15 PM</td>
+							<td>3 minutes, 8 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205443">205443</a></td>
+							<td><span class="label label-green">GREEN</span></td>
+							<td>13</td>
+							<td>August 15, 2013 at 12:11 PM</td>
+							<td>August 15, 2013 at 12:18 PM</td>
+							<td>7 minutes, 27 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205442">205442</a></td>
+							<td><span class="label label-blue">BLUE</span></td>
+							<td>27</td>
+							<td>August 15, 2013 at 12:09 PM</td>
+							<td>August 15, 2013 at 12:12 PM</td>
+							<td>2 minutes, 51 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205441">205441</a></td>
+							<td><span class="label label-blue">BLUE</span></td>
+							<td>3</td>
+							<td>August 15, 2013 at 12:07 PM</td>
+							<td>August 15, 2013 at 12:16 PM</td>
+							<td>8 minutes, 50 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205440">205440</a></td>
+							<td><span class="label label-red">RED</span></td>
+							<td>8</td>
+							<td>August 15, 2013 at 12:07 PM</td>
+							<td>August 15, 2013 at 12:12 PM</td>
+							<td>4 minutes, 47 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205439">205439</a></td>
+							<td><span class="label label-green">GREEN</span></td>
+							<td>16</td>
+							<td>August 15, 2013 at 12:06 PM</td>
+							<td>August 15, 2013 at 12:21 PM</td>
+							<td>15 minutes</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205438">205438</a></td>
+							<td><span class="label label-red">RED</span></td>
+							<td>30</td>
+							<td>August 15, 2013 at 12:05 PM</td>
+							<td>August 15, 2013 at 12:13 PM</td>
+							<td>8 minutes, 11 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205437">205437</a></td>
+							<td><span class="label label-blue">BLUE</span></td>
+							<td>30</td>
+							<td>August 15, 2013 at 12:03 PM</td>
+							<td>August 15, 2013 at 12:11 PM</td>
+							<td>7 minutes, 56 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205436">205436</a></td>
+							<td><span class="label label-green">GREEN</span></td>
+							<td>26</td>
+							<td>August 15, 2013 at 12:01 PM</td>
+							<td>August 15, 2013 at 12:06 PM</td>
+							<td>5 minutes, 22 seconds</td>
+						</tr>
+						<tr>
+							<td><a href="/skywars/205435">205435</a></td>
+							<td><span class="label label-blue">BLUE</span></td>
+							<td>7</td>
+							<td>August 15, 2013 at 12:00 PM</td>
+							<td>August 15, 2013 at 12:09 PM</td>
+							<td>8 minutes, 59 seconds</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal hide fade" id="play">
+	<div class="modal-header">
+		<a class="close" data-dismiss="modal">×</a>
+		<h3>How to Play</h3>
+	</div>
+	<div class="modal-body">
+		<img src="/assets/play.png" />
+	</div>
+	<div class="modal-footer">
+		<a href="#" data-dismiss="modal" class="btn btn-primary">Close</a>
+	</div>
+</div>
+<div class="modal hide fade" id="skywars-video">
+	<div class="modal-header">
+		<a class="close" data-dismiss="modal">×</a>
+		<h3>Sky Wars 2.0 by JJtCool</h3>
+	</div>
+	<div class="modal-body">
+		<iframe width="525" height="295" src="/_ext/www.youtube.com/embed/OTO7arbYUEI__rel=0.html" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="modal-footer">
+		<a href="#" data-dismiss="modal" class="btn btn-primary">Close</a>
+	</div>
+</div>
+
+<div class="modal hide fade" id="walls-video">
+	<div class="modal-header">
+		<a class="close" data-dismiss="modal">×</a>
+		<h3>The Walls by Hypixel</h3>
+	</div>
+	<div class="modal-body">
+		<iframe width="525" height="295" src="/_ext/www.youtube.com/embed/HLeXP15vkcM__rel=0.html" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="modal-footer">
+		<a href="#" data-dismiss="modal" class="btn btn-primary">Close</a>
+	</div>
+</div>
+
+<div class="modal hide fade" id="ghost-video">
+	<div class="modal-header">
+		<a class="close" data-dismiss="modal">×</a>
+		<h3>Ghost Squadron by Sethbling</h3>
+	</div>
+	<div class="modal-body">
+		<iframe width="525" height="295" src="/_ext/www.youtube.com/embed/I7HofiB687E__rel=0.html" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="modal-footer">
+		<a href="#" data-dismiss="modal" class="btn btn-primary">Close</a>
+	</div>
+</div>
+
+
+
+    <footer>
+      <hr />
+      <ul class="nav nav-pills">
+        <li class="pull-left">
+          <a>© 2013 MC Zone</a>
+        </li>
+        <li class="pull-right">
+          <a href="/about">About</a>
+        </li>
+        <li class="pull-right">
+          <a href="/infractions">Infractions</a>
+        </li>
+        <li class="pull-right">
+          <a href="/staff">Staff</a>
+        </li>
+        <li class="pull-right">
+          <a href="/rules">Rules</a>
+        </li>
+        <li class="pull-right">
+          <a href="/terms">Terms</a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+
+  <!-- Coolio Textboxes -->
+  <script type="text/javascript">
+  $('.textarea').each(function(i, elem) {
+    $(elem).wysihtml5();
+  });
+  </script>
+
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36634676-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+
+  <script src="/assets/custom.js?m=1" type="text/javascript"></script>
+</body>
+</html>

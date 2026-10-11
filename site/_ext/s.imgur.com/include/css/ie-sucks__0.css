@@ -1,0 +1,9 @@
+#cboxLoadedContent iframe{ background: url("/_ext/s.imgur.com/images/loader-big-ff.gif") no-repeat scroll 50% 20% #fff; }
+
+#footer a {
+	padding: 0 3px;
+}
+
+.embed .nav-button, .horizontal .nav-button {
+	background-image: url('/_ext/s.imgur.com/images/transparent.gif');
+}

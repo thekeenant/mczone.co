@@ -1,0 +1,17 @@
+/*	IE6 & IE5.5
+-------------------------------------------------- */
+
+	#uploadTool { height: 310px; background-color: #fff; position: relative;}
+	div.wrapper { height: 50em; }
+    #member-container-header { position: absolute; top: 0px; z-index: 100; left: 0px; width: 100%;}
+	
+	div.browse #browseImgs ul li { margin: 0 11px 15px 0; }
+	div.browse #browseVids ul li { float: right; margin: 0 0 15px 11px; }
+
+	ul.quickBrowse { height: 8.5em; padding: .5em 0 0 .5em; }
+		ul.quickBrowse li { padding: 0; margin: 0; }
+		ul.quickBrowse li a,
+		ul.quickBrowse li a:visited { padding: 0; margin: 0 .4em .5em 0; }
+			ul.quickBrowse li.last a,
+			ul.quickBrowse li.last a:visited { margin: 0 0 .4em 0; }
+			

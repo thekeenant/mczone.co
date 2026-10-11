@@ -1,0 +1,80 @@
+# The mczone.co sites as configured in ~/web/Caddyfile. This is a copy for
+# reference; the live file is ~/web/Caddyfile. The caddy container mounts:
+#   ~/web/mczone-site            -> /srv/mczone             (site/, v4)
+#   ~/web/mczone-routes.caddy    -> /etc/caddy/mczone-routes.caddy
+#   ~/web/mczone-editions        -> /srv/mczone-editions    (landing/, v1-v3)
+
+www.mczone.co, http://www.mczone.co {
+    redir https://mczone.co{uri}
+}
+
+# mczone.co is a landing page about the archive. Any other path is an old
+# deep link into the site, so it goes to the same path on v4.
+mczone.co, http://mczone.co {
+    @visitor_http header X-Forwarded-Proto http
+    redir @visitor_http https://mczone.co{uri} 301
+
+    header Cache-Control "public, max-age=300"
+    # the old Perspectives page now lives on the main page
+    redir /perspectives* /#perspectives 302
+    @landing path / /index.html /favicon.ico /_landing/*
+    handle @landing {
+        root * /srv/mczone-editions/landing
+        file_server
+    }
+    handle {
+        redir https://v4.mczone.co{uri} 302
+    }
+}
+
+# Served on plain http too: the mczone.co Cloudflare zone uses Flexible SSL,
+# which talks to the origin over http, so visitors' scheme comes from
+# X-Forwarded-Proto instead of the connection.
+v4.mczone.co, http://v4.mczone.co {
+    @visitor_http header X-Forwarded-Proto http
+    redir @visitor_http https://v4.mczone.co{uri} 301
+
+    # Static mirror of MC Zone (Jul-Nov 2013), rebuilt from the Wayback
+    # Machine by ~/src/mczone-archive (scrape.py build && ./deploy.sh).
+    root * /srv/mczone
+    # Short edge/browser cache so rebuilds show up without a Cloudflare purge.
+    header Cache-Control "public, max-age=300"
+    import /etc/caddy/mczone-routes.caddy
+    try_files {path} {path}/index.html
+    file_server
+
+    handle_errors 404 {
+        rewrite * /_mirror/404.html
+        file_server
+    }
+}
+
+# Older designs of MC Zone, built by ~/src/mczone-archive the same way as
+# v4.mczone.co above: v1 = Nov 2012, v2 = Nov 2012 - Mar 2013, v3 = Apr - Jun 2013.
+(mczone_edition) {
+    @visitor_http header X-Forwarded-Proto http
+    redir @visitor_http https://{host}{uri} 301
+
+    root * /srv/mczone-editions/{args[0]}
+    header Cache-Control "public, max-age=300"
+    import /srv/mczone-editions/routes-{args[0]}.caddy
+    try_files {path} {path}/index.html
+    file_server
+
+    handle_errors 404 {
+        rewrite * /_mirror/404.html
+        file_server
+    }
+}
+
+v1.mczone.co, http://v1.mczone.co {
+    import mczone_edition v1
+}
+
+v2.mczone.co, http://v2.mczone.co {
+    import mczone_edition v2
+}
+
+v3.mczone.co, http://v3.mczone.co {
+    import mczone_edition v3
+}

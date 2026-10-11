@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>MC ZONE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+		<link href='/_ext/fonts.googleapis.com/css__family=Marcellus_SC.css' rel='stylesheet' type='text/css'>
+    <link href="/css/bootstrap.css?m=1" rel="stylesheet">
+    <link href="/css/custom.css?m=1" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="/css/bootstrap-responsive.css?m=1" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/_ext/html5shim.googlecode.com/svn/trunk/html5.js?m=1"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+  <script src="/_mirror/mirror.js?m=1" defer></script></head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">MC ZONE</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class=""><a href="/">Home</a></li> 
+              <li class=""><a data-mz-missing href="/vote">Vote</a></li>        
+              <!-- <li class=""><a data-mz-missing href="/profiles">Profiles</a></li> -->
+              <li class="dropdown ">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servers <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li class=""><a data-mz-missing href="/walls"><i class="icon-th-large"></i> Walls</a></li>
+                  <li class=""><a href="/hg"><i class="icon-fire"></i> Hunger Games</a></li>
+                  <li class="active"><a href="/kitpvp"><i class="icon-briefcase"></i> Kit PVP</a></li>
+                </ul>
+              </li>
+              <li class=""><a data-mz-missing href="/blog">Blog</a></li>
+              <li class=""><a href="/order">Order</a></li>
+              <li class=""><a href="/about">Help</a></li>
+              <li class=""><a data-mz-missing href="/contact">Contact</a></li>
+            </ul>
+            <form class="navbar-search pull-right form-search" action="/profiles" method="GET">
+							<div class="input-append">
+								<input type="text" autocomplete="off" class="search-query span2" placeholder="Search Profiles..." name="username" id="username"><button style="margin-top: 0px;" type="submit" class="btn btn-success"><font><font>Go</font></font></button>
+							</div>
+						</form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+				
+<div class="row servers kitpvp-servers">
+	<center><img src="/img/ajax-loader.gif" style="margin-top:30px;"/></center>
+</div>
+
+<hr />
+<div id="myCarousel" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner" style="height: 350px;">
+    <div class="active item" style="height: 350px;">
+			<img src="https://dl.dropbox.com/u/12595335/2012-10-19_16.25.28.png" />
+			<div class="carousel-caption">
+				<h4>Multiple Arenas</h4>
+				<p>
+					Fight other players in PVP style combat with a premade set of weapons, tools and armor.
+				</p>
+			</div>
+		</div>
+    <div class="item" style="height: 350px;">
+			<img src="https://dl.dropbox.com/u/12595335/2012-10-19_16.28.21.png" />
+			<div class="carousel-caption">
+				<h4>Credits</h4>
+				<p>
+					Earn credits for killing players. Those with higher killstreaks are worth more.
+				</p>
+			</div>
+		</div>
+  </div>
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+<p>
+	<b>Game Description:</b>
+	Choose a kit of certain weapons, armor and tools to kill your enemies. Fight 
+	other players in themed arenas such as desert, winter and grasslands. Killing 
+	players gets you credits which you can use to purchase items, abilities and enchantments.
+</p>
+
+<br />
+
+<div class="row">
+	<div class="span6">
+		<div class="row">
+			<div class="span1">
+				<h3>Upgrade</h3>
+			</div>
+			<div class="span4 pull-right" style="margin-top:10px;">
+				<h4>Get VIP and above at the <a href="/order">order</a> page.</h4>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="span2">
+				<h3>Buy Kits</h3>
+			</div>
+			<div class="span4 pull-right">
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="form-inline pull-right donation" style="margin-top:15px;">
+					<input type="text" name="custom" id="custom" autocomplete="off" placeholder="Username" class="span2" style="width: 100px;">
+					<select name="item_name" class="span2" style="width: 100px;">
+											<option value="archer">Archer</option>
+											<option value="berserker">Berserker</option>
+											<option value="heavy">Heavy</option>
+											<option value="magician">Magician</option>
+											<option value="orc">Orc</option>
+											<option value="scout">Scout</option>
+											<option value="warrior">Warrior</option>
+										</select>
+					<input type="hidden" name="cmd" value="_xclick">
+					<input type="hidden" name="business" value="[email removed]">
+					<input type="hidden" name="item_number" value="1">  
+					<input type="hidden" name="amount" value="2.49">  
+					<input type="hidden" name="no_shipping" value="0">  
+					<input type="hidden" name="no_note" value="1">  
+					<input type="hidden" name="currency_code" value="USD">  
+					<input type="hidden" name="lc" value="AU">
+					<input type="hidden" name="bn" value="PP-BuyNowBF">  
+					<input type="hidden" name="notify_url" value="http://www.mczone.co/includes/ipn/kitpvp.php" />
+					<input type="hidden" name="return" value="http://www.mczone.co?notify=payment">
+					<button type="submit" class="btn btn-success check">Buy: $2.49</button>
+				</form>
+			</div>
+		</div>
+		
+		<p>
+			The whole idea of Kit PVP is having a premade set of weapons, tools and armor pieces called kits. It is the
+			foundation of the game and will determine your success. Get better kits to get more kills and more credits
+			for just $2.49 a kit.
+		</p>
+		
+		<div class="row">
+			<div class="span2">
+				<h3>Find Kits</h3>
+			</div>
+			<div class="span4 pull-right">
+				<form class="kit-search form-inline pull-right" style="margin-top:15px;">
+					<input type="text" autocomplete="off" placeholder="Search Kits..." class="span2 kpks" id="username">
+				</form>
+			</div>
+		</div>
+		<div class="kitpvp-packages">
+<div class="no-left-margin right-margin kit">
+	<h4>Archer</h4>
+	<p>&bull; Stone Sword<br />&bull; Bow Power I<br />&bull; 64 Arrow<br />&bull; Iron Armor</p>
+</div>
+
+<div class="no-left-margin right-margin kit">
+	<h4>Berserker</h4>
+	<p>&bull; Diamond Sword<br />&bull; Leather Armor</p>
+</div>
+
+<div class="no-left-margin right-margin kit">
+	<h4>Heavy</h4>
+	<p>&bull; Stone Sword<br />&bull; Iron Armor<br />&bull; Diamond Chestplate</p>
+</div>
+
+<div class="no-left-margin right-margin kit">
+	<h4>Magician</h4>
+	<p>&bull; Iron Sword<br />&bull; Weakness Splash<br />&bull; Slowness Splash<br />&bull; Iron Armor No Helm</p>
+</div>
+
+<div class="no-left-margin right-margin kit">
+	<h4>Orc</h4>
+	<p>&bull; Iron Sword<br />&bull; 2 Strength Potion II<br />&bull; Iron Armor No Helm</p>
+</div>
+
+<div class="no-left-margin right-margin kit">
+	<h4>Scout</h4>
+	<p>&bull; Iron Sword<br />&bull; 2 Speed Potion II<br />&bull; Iron Armor No Helm</p>
+</div>
+
+<div class="no-left-margin right-margin kit">
+	<h4>Warrior</h4>
+	<p>&bull; Iron Sword Sharpness 1<br />&bull; Gold Armor</p>
+</div>
+
+</div>
+	</div>
+
+	<div class="span6">
+		<h3>Leaderboards</h3>
+		<ul id="kitpvp_tabs" class="nav nav-tabs" data-tabs="tabs" style="margin-bottom: 10px;">
+			<li class="active"><a href="#credits" data-toggle="tab">Credits</a></li>
+			<li><a href="#kills" data-toggle="tab">Kills</a></li>
+			<li><a href="#killstreak" data-toggle="tab">Killstreak</a></li>
+			<li><a href="#time" data-toggle="tab">Time Played</a></li>
+		</ul>
+		<div id="kitpvp_top">
+		</div>
+	</div>
+</div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; MC Zone 2012</p>
+      </footer>
+		    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+		<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display:none"></div>
+    <script src="/js/jquery.js?m=1"></script>
+    <script src="/js/bootstrap.js?m=1"></script>
+    <script src="/js/custom.js?m=1"></script>
+  </body>
+</html>

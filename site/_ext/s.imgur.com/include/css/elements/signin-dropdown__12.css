@@ -1,0 +1,214 @@
+body {
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: Arial,sans-serif;
+    color: #DDDDD1;
+}
+
+label {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+::selection {
+    background: #85BF25;
+}
+
+input[type=submit].button-medium {
+    width: 78px;
+    height: 33px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFF;
+    font-family: arial,sans-serif;
+    background: #2B2B2B;
+    background: -moz-linear-gradient(top,#2b2b2b 0,#121211 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#2B2B2B),color-stop(100%,#121211));
+    background: -webkit-linear-gradient(top,#2B2B2B 0,#121211 100%);
+    background: -o-linear-gradient(top,#2b2b2b 0,#121211 100%);
+    background: -ms-linear-gradient(top,#2b2b2b 0,#121211 100%);
+    background: linear-gradient(to bottom,#2B2B2B 0,#121211 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2b2b2b', endColorstr='#121211', GradientType=0);
+    border-radius: 4px;
+    border: 2px solid #444442;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #262E3B;
+    border-color: #C29F37;
+    box-shadow: 0 0 3px 0 #C29F37;
+    outline: 0 none;
+}
+
+.signin-link > a {
+    padding-left: 2px !important;	
+}
+
+#dropdown-signin-form {
+    font-size: 12px;
+    color: #121211;
+    font-weight: normal;
+}
+
+.signin-link.opened > a {
+    background-color: #121211 !important;
+    border-bottom: 4px solid #85BF25;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input[type="text"], input[type="password"] {
+    width: 180px;
+    font-size: 12px !important;
+    font-weight: normal;
+    padding: 5px !important;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+input[type=text], input[type=password], textarea, #domain, select {
+    background-color: #121211;
+    border: 1px solid #444442;
+    color: #FFF;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+input[type="checkbox"] {
+    margin-left: 0;
+}
+
+.remember-box label {
+	position: absolute;
+	width: 175px;
+	height: 20px;
+	text-align: right;
+	left: 15px;
+	top: 0px;
+	z-index: 1000;
+}
+
+.remember-box {
+    font-size: 12px;
+    position: relative;
+    height: 20px;
+}
+
+span.tiptext {
+    color: #121211;
+    padding: 0;
+    font-style: italic;
+    cursor: default;
+}
+
+#dropdown-signin-form .tiptext {
+    margin-top: 1px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+a {
+    color: #121211;
+}
+
+.recover a:link, .recover a:visited {
+    font-size: 12px !important;
+    color: #4E76C9;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 0;
+    display: inline;
+    right: 6px;
+    position: relative;
+    top: 1px;
+}
+
+.recover {
+    float: right;
+}
+
+.recover a:hover {
+    text-decoration: underline;
+}
+
+.other-accounts {
+    width: 150px;
+    float: left;
+    padding-top: 12px;
+}
+
+
+.signin-button {
+    margin: 5px auto 0px auto;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 85px;
+}
+
+.other-accounts span.tiptext {
+    padding-left: 15px;
+    margin-bottom: 1px;
+    display: block;
+}
+
+.other-accounts ul li {
+    display: block;
+    float: none;
+    padding: 0;
+}
+
+.other-accounts ul li a {
+    padding-left: 63px;
+}
+
+.other-accounts ul li a:hover {
+    color: #fff;
+}
+
+.other-accounts ul {
+    padding-top: 4px;
+}
+
+#dropdown-signin-form {
+    width: 198px;
+    padding: 3px 18px 11px 10px;
+}
+
+.signin-icon {
+    background: url(/_ext/s.imgur.com/images/button-icons.png) no-repeat center;
+    float: left;
+    height: 11px;
+    position: relative;
+    left: 25px;
+    top: 8px;
+}
+
+.signin-icon.imgur {
+    background: url('/_ext/s.imgur.com/images/site-sprite__1390881482.png') no-repeat scroll -166px -64px transparent !important;
+    height: 12px;
+    left: 8px;
+    position: absolute;
+    width: 13px;
+    top: 8px;
+    padding: 0;
+    font-size: 13px;
+    position: absolute;
+}
+
+.signin-button input {
+    padding-left: 20px;
+    padding-top: 2px;
+    position: relative;
+}

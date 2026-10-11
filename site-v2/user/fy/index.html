@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>MC Zone Games</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.css?m=1" rel="stylesheet">
+    <link href="/css/custom.css?m=1" rel="stylesheet">
+    <link href="/css/tables.css?m=1" rel="stylesheet">
+    <link href="/css/tooltip.css?m=1" rel="stylesheet">
+		
+		<!-- Le Javascripts -->
+    <script src="/js/jquery.js?m=1"></script>
+    <script type="text/javascript" src="/js/highcharts/js/highcharts.js?m=1"></script>
+    <script src="/js/tables.js?m=1"></script>
+    <script src="/js/custom.js?m=1"></script>
+    
+    <style>
+      body {
+        padding-top: 75px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/_ext/html5shim.googlecode.com/svn/trunk/html5.js?m=1"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAA2ml4ANUxrAC5wSAA6dlgAN05uABYfLQAXITAAM3ROABQdKwA9oWQAIjFFAESnbAAeODoAUKp8ACAvQwAXIi4AMTM3AEKebQArP1gAIUE6ACg7UwA0mVsAJTdOACxBWwAYIjcAGSU3ACAvRAAtQ14ALpBUACdtQwAQFyUAHSs/ABEaJQAfLj8AVK+AADyFWgAfLUIANEtpAC1rSQAhM0oAFUAmAEaqbgA4m18AIzVNABsoOAAiMkUAOlN0ABgkMwAdSS4AO6BiABMcKQAjZz0AEyMmADlRcgAYIjEAJTZLADmbYAA3lFsASalyACMyRgAvRmAAZL6RACt6SgBfuowAHCwuAE9SVgAylVkAJzpRAB9gOQAXPSgAK0BZAEOmawBYuIIAFjQpACY4TwAiTDgAQaRpAEancQAhMEUA////ADNKZwAxRmIAVrOBACQsOAA9nWUAXLaJADNAUgA0PkcASaRyABomOQAfLT4AOZxgACEzRgAcKTkAHlg5AEqtcgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAT09PT09PT04sT09PT09PT09PT09PFko8LAoZT09PT09PT09WN1AWUQUvBQ8sT09PTysEN0NDGkEhWlwvLC8GT08SK1FXAS5dGQYPUywGWk9PDiVKFlErFDYWJDY7MlNPTzwrF0YuJx8vWgYsWjcQT08WNStZGCcTQAhaIC0vMk9PHxsXSwNLMzBLIDQeNi9PTysaDF4HPjo/M0lFSw8gT09TJksjSFU5OVRbJktJSU9PAh0/KhEJOUcJC0dMRChPT01VHFJHDSIJCUI6ADEVT09PT184PQkAUgApUglPT09PT09PTwkxEQBYW09PT09PT09PT09PTwspT09PT09PT/5/AAD4HwAA4AcAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAADgBwAA+B8AAP5/AAA=" rel="icon" type="image/x-icon" />
+  <script src="/_mirror/mirror.js?m=1" defer></script></head>
+
+  <body onLoad="checkCookie('MyCookie')">
+
+    <!--<div class="container navy">
+      <div class="row navigation">
+        <div class="span3">
+          <a class="brand" href="#"> MC Zone</a>  
+        </div>
+      </div>
+    </div>-->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner navbar-black">
+        <div class="container">
+          <a class="brand" href="/"><img src="/img/mczone.png" class="banner" /></a>
+          <span class="players">100 players online</span>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+                            <li ><a href="/">Home</a></li>
+              <li class="dropdown ">
+                <a data-mz-missing href="/servers">Servers</a>
+              </li>
+              <li ><a data-mz-missing href="/upgrade">Upgrade</a></li>
+              <li><a data-mz-missing href="/forum">Forum</a></li>
+              <li class="search active"><a href="javascript:void()">Profiles</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+
+      <div class="search-form-div">
+        <div class="container">
+          <center>
+            <form class="search-form form form-inline">
+              <input type="text" class="search-username" value="fy" placeholder="Herobrine"></input>
+              <button class="btn btn-success search-submit">Search</button>
+              <a data-mz-missing href="/user/" class="btn btn-primary">All Profiles</a>
+            </form>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="position: relative;">
+                              <div class="title">
+      <h1>Search: <span id="152" class="name">fy</span></h1>
+    </div>
+
+    <div class="well">
+      <div class="row profile-search"></div>
+    </div>
+
+        <div class="well footer">
+      <div class="row row-well">
+        <div class="span2">
+          &copy; MC Zone (2012)
+        </div>
+        <div class="span4">
+          <a target="_blank" href="mailto:info@mczone.co?subject=MC Zone Inquiry">info@mczone.co</a>
+        </div>
+      </div>
+    </div>
+
+    </div> <!-- /container -->
+
+    <div id="popup" class="modal hide">
+      <div class="modal-header">
+        <a href="#popup" type="button" class="close voted">&times;</a>
+        <h3>Have you voted today?</h3>
+      </div>
+      <div class="modal-body">
+        <p>
+          <b>Top voters this month get a free one month subscription! </b>1st place gets Titan, 2nd place gets Elite, and 3rd gets
+          VIP! In addition to this, you also get a free kit on the server you vote for! Vote at the following websites:
+        </p>
+        <center>
+          <a href="http://lnx.lu/zPb">Hunger Games</a><br />
+          <a href="http://lnx.lu/xpj">Sky Wars</a><br />
+          <a href="http://lnx.lu/sFX">THe Walls</a>
+        </center>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn btn-primary voted">I've Voted!</a>
+        <a href="/vote" class="btn btn voted">See Top Voters</a>
+      </div>
+    </div>
+
+    <!-- Le javascript -->
+    <script src="/js/jquery.transit.js?m=1"></script>
+    <script src="/js/tooltip.js?m=1"></script>
+    <script src="/js/tables.js?m=1"></script>
+    <script src="/js/custom.js?m=1"></script>
+    <script src="/js/bootstrap.js?m=1"></script>
+    <script src="/js/cookies.js?m=1"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36634676-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

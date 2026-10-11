@@ -1,0 +1,131 @@
+span.slashes {
+	color: #218CCC;
+}
+
+.servers {
+	height: 60px;
+}
+
+a.game {
+	color: #5C5C5C;
+}
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+.image h2 { 
+   position: absolute; 
+   top: 0px; 
+   left: 0;
+   width: 100%;
+}
+
+.image h2 span { 
+   color: white; 
+   font: bold 16px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
+
+.no-left-margin {
+    margin-left: 0 !important;
+}
+
+.right-margin {
+    margin-right: 5px !important;
+}
+
+.kit {
+	min-height: 130px;
+  margin-bottom: 5px;
+	padding: 5px;
+	float:left;
+	width: 170px;
+}
+.keyword{
+	background: #FFE53D;
+}
+
+.walls-packages {
+	min-height: 600px;
+}
+.hg-packages {
+	min-height: 600px;
+}
+
+.placeholder
+{
+  color: #A8A8A8 !important;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+.player {
+  display: block;
+  padding: 4px;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+	height: 60px;
+}
+
+.player h3 {
+	font-size: 18px;
+	line-height: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.player .img {
+	display: block;
+	float:left;
+	width: 60px;
+	margin-right: 10px;
+}
+
+.player-info {
+	width: 250px;
+	float:left;
+}
+
+.player-container {
+	display: block;
+	float:left;
+	margin-left: 30px;
+	margin-bottom: 15px;
+}
+
+.player-row a {
+	color: #5C5C5C;
+}

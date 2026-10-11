@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="/_ext/s.imgur.com/include/css/elements/signin-dropdown__12.css?m=1">
+</head>
+    <body>
+        <form method="post" action="/signin" id="dropdown-signin-form" target='_parent'>
+            <span class='tiptext'>Use an Imgur account</span>
+            <input type="text" tabindex="11" name="username" maxlength="255" id="dd-username" title="username or email address" placeholder="username or email address" class="placeholder-onkeydown placeholder required" value="">
+        
+            <div>
+                <div class="recover">
+                    <a class="forgot" href="//imgur.com/signin/forgotpassword" target="_blank">
+                        forgot?
+                    </a>
+                </div>
+                <div class="clear"></div>
+                <input type="password" tabindex="12" name="password" title="password" maxlength="255" id="dd-password" placeholder="password" class="placeholder required" value="">
+            </div>
+        
+            <div class="remember-box">
+                <input type="checkbox" tabindex="13" name="remember" id="dd-remember" value="remember" checked="checked">
+                <label for="dd-remember"> Stay signed in on this computer</label>
+            </div>
+        
+            <div class="signin-button">
+                <input type="submit" class="button-medium" name="submit_form" value="Sign in" id="dd-submit" tabindex="14">
+                <label class="imgur signin-icon" for="dd-submit"></label>
+            </div>
+        </form>
+    </body>
+    
+    <script type="text/javascript">
+        document.getElementById('dropdown-signin-form').action = '/signin?redirect=' + document.referrer;
+
+        window.onfocus = function() {
+            document.getElementById('dd-username').focus();
+        };
+    </script>
+</html>

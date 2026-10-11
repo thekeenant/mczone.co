@@ -1,0 +1,70 @@
+@import url(/_ext/fonts.googleapis.com/css__family=Open_Sans_100_200_400_300italic_300_400italic_600_600italic_700_700italic_800_800italic.css);
+
+body {
+   font-family: 'Open Sans', sans-serif;
+  background-image: url('/assets/bg.png');
+   background-color: transparent;
+}
+
+.logo span {
+    font-weight: 100;
+}
+
+.box {
+    width: 860px;
+	margin-top: 50px;
+	-moz-box-shadow: 0 0 10px #1a1a18;
+	-webkit-box-shadow: 0 0 10px #1a1a18;
+	box-shadow: 0 0 5px #736F6E;
+	border: 0px solid #000000;
+}
+
+.table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th {
+  background-color: #F5F5F5;
+}
+
+table {
+  background-color: #ffffff;
+}
+
+.btn-info {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #5bb75b;
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(to bottom, #62c462, #51a351);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #51a351;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-info:hover,
+.btn-info:active,
+.btn-info.active,
+.btn-info.disabled,
+.btn-info[disabled] {
+  color: #ffffff;
+  background-color: #51a351;
+  *background-color: #499249;
+}
+.btn-info:active,
+.btn-info.active {
+  background-color: #408140 9;
+}
+
+.table th,
+.table td {
+  border-top: 1px solid #dddddd;
+}
+
+.image img {
+    border-radius: 4px;
+}
