@@ -2,7 +2,7 @@
 # reference; the live file is ~/web/Caddyfile. The caddy container mounts:
 #   ~/web/mczone-site            -> /srv/mczone             (site/, v4)
 #   ~/web/mczone-routes.caddy    -> /etc/caddy/mczone-routes.caddy
-#   ~/web/mczone-editions        -> /srv/mczone-editions    (landing/, v1-v3)
+#   ~/web/mczone-editions        -> /srv/mczone-editions    (landing/, v0-v3)
 
 www.mczone.co, http://www.mczone.co {
     redir https://mczone.co{uri}
@@ -51,6 +51,7 @@ v4.mczone.co, http://v4.mczone.co {
 
 # Older designs of MC Zone, built by ~/src/mczone-archive the same way as
 # v4.mczone.co above: v1 = Nov 2012, v2 = Nov 2012 - Mar 2013, v3 = Apr - Jun 2013.
+# v0 is TerraScape (2011 - 2012), saved from Weebly by build_v0.py.
 (mczone_edition) {
     @visitor_http header X-Forwarded-Proto http
     redir @visitor_http https://{host}{uri} 301
@@ -65,6 +66,10 @@ v4.mczone.co, http://v4.mczone.co {
         rewrite * /_mirror/404.html
         file_server
     }
+}
+
+v0.mczone.co, http://v0.mczone.co {
+    import mczone_edition v0
 }
 
 v1.mczone.co, http://v1.mczone.co {
